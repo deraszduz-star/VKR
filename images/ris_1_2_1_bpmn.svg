@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="560" viewBox="0 0 820 560">
+  <!-- Background -->
+  <rect width="820" height="560" fill="white"/>
+  
+  <!-- Main outer frame -->
+  <rect x="20" y="15" width="780" height="500" rx="5" ry="5" fill="none" stroke="#000" stroke-width="2"/>
+  
+  <!-- Section 1: ОБЪЕКТЫ ПОТОКА -->
+  <rect x="20" y="15" width="780" height="30" fill="#4472C4" stroke="#000" stroke-width="1.5"/>
+  <text x="410" y="36" font-family="Times New Roman, Liberation Serif, serif" font-size="13" text-anchor="middle" font-weight="bold" fill="white">ОБЪЕКТЫ ПОТОКА (Flow Objects)</text>
+  
+  <!-- Three columns for flow objects -->
+  <!-- Column 1: Events -->
+  <rect x="30" y="50" width="250" height="165" fill="#D9E2F3" stroke="#4472C4" stroke-width="1"/>
+  <text x="155" y="72" font-family="Times New Roman, Liberation Serif, serif" font-size="12" text-anchor="middle" font-weight="bold">СОБЫТИЯ</text>
+  
+  <!-- Start event -->
+  <circle cx="65" cy="100" r="14" fill="none" stroke="#548235" stroke-width="2"/>
+  <text x="100" y="105" font-family="Times New Roman, Liberation Serif, serif" font-size="12">начальное</text>
+  
+  <!-- Intermediate event -->
+  <circle cx="65" cy="140" r="14" fill="none" stroke="#ED7D31" stroke-width="2"/>
+  <circle cx="65" cy="140" r="10" fill="none" stroke="#ED7D31" stroke-width="1.5"/>
+  <text x="100" y="145" font-family="Times New Roman, Liberation Serif, serif" font-size="12">промежуточное</text>
+  
+  <!-- End event -->
+  <circle cx="65" cy="180" r="14" fill="none" stroke="#C00000" stroke-width="3.5"/>
+  <text x="100" y="185" font-family="Times New Roman, Liberation Serif, serif" font-size="12">конечное</text>
+  
+  <!-- Column 2: Activities -->
+  <rect x="285" y="50" width="250" height="165" fill="#D9E2F3" stroke="#4472C4" stroke-width="1"/>
+  <text x="410" y="72" font-family="Times New Roman, Liberation Serif, serif" font-size="12" text-anchor="middle" font-weight="bold">ОПЕРАЦИИ</text>
+  
+  <!-- Task -->
+  <rect x="310" y="85" width="100" height="35" rx="8" ry="8" fill="white" stroke="#000" stroke-width="1.5"/>
+  <text x="360" y="107" font-family="Times New Roman, Liberation Serif, serif" font-size="12" text-anchor="middle">Задача</text>
+  <text x="430" y="107" font-family="Times New Roman, Liberation Serif, serif" font-size="12">(Task)</text>
+  
+  <!-- Subprocess -->
+  <rect x="310" y="140" width="100" height="35" rx="8" ry="8" fill="white" stroke="#000" stroke-width="1.5"/>
+  <text x="360" y="162" font-family="Times New Roman, Liberation Serif, serif" font-size="12" text-anchor="middle">Подпроцесс</text>
+  <rect x="345" y="165" width="30" height="2" fill="#000"/>
+  <line x1="360" y1="162" x2="360" y2="172" stroke="#000" stroke-width="1.5"/>
+  <line x1="352" y1="167" x2="368" y2="167" stroke="#000" stroke-width="1.5"/>
+  <text x="430" y="162" font-family="Times New Roman, Liberation Serif, serif" font-size="12">(Sub-Process)</text>
+  
+  <!-- Column 3: Gateways -->
+  <rect x="540" y="50" width="250" height="165" fill="#D9E2F3" stroke="#4472C4" stroke-width="1"/>
+  <text x="665" y="72" font-family="Times New Roman, Liberation Serif, serif" font-size="12" text-anchor="middle" font-weight="bold">ШЛЮЗЫ</text>
+  
+  <!-- Exclusive gateway (XOR) -->
+  <polygon points="580,100 600,80 620,100 600,120" fill="white" stroke="#000" stroke-width="1.5"/>
+  <text x="600" y="105" font-family="Times New Roman, Liberation Serif, serif" font-size="14" text-anchor="middle" font-weight="bold">×</text>
+  <text x="645" y="97" font-family="Times New Roman, Liberation Serif, serif" font-size="11">эксклюзивный</text>
+  <text x="645" y="112" font-family="Times New Roman, Liberation Serif, serif" font-size="11">(XOR)</text>
+  
+  <!-- Parallel gateway (AND) -->
+  <polygon points="580,150 600,130 620,150 600,170" fill="white" stroke="#000" stroke-width="1.5"/>
+  <text x="600" y="155" font-family="Times New Roman, Liberation Serif, serif" font-size="14" text-anchor="middle" font-weight="bold">+</text>
+  <text x="645" y="147" font-family="Times New Roman, Liberation Serif, serif" font-size="11">параллельный</text>
+  <text x="645" y="162" font-family="Times New Roman, Liberation Serif, serif" font-size="11">(AND)</text>
+  
+  <!-- Inclusive gateway (OR) -->
+  <polygon points="580,200 600,180 620,200 600,220" fill="white" stroke="#000" stroke-width="1.5"/>
+  <circle cx="600" cy="200" r="7" fill="none" stroke="#000" stroke-width="1.5"/>
+  <text x="645" y="197" font-family="Times New Roman, Liberation Serif, serif" font-size="11">включающий</text>
+  <text x="645" y="212" font-family="Times New Roman, Liberation Serif, serif" font-size="11">(OR)</text>
+  
+  <!-- Section 2: СОЕДИНИТЕЛЬНЫЕ ОБЪЕКТЫ -->
+  <rect x="20" y="220" width="780" height="30" fill="#70AD47" stroke="#000" stroke-width="1.5"/>
+  <text x="410" y="241" font-family="Times New Roman, Liberation Serif, serif" font-size="13" text-anchor="middle" font-weight="bold" fill="white">СОЕДИНИТЕЛЬНЫЕ ОБЪЕКТЫ (Connectors)</text>
+  
+  <rect x="30" y="255" width="760" height="80" fill="#E2EFDA" stroke="#70AD47" stroke-width="1"/>
+  
+  <!-- Sequence Flow -->
+  <line x1="60" y1="278" x2="140" y2="278" stroke="#000" stroke-width="2" marker-end="url(#arrowBpmn)"/>
+  <text x="160" y="283" font-family="Times New Roman, Liberation Serif, serif" font-size="12">поток последовательности (Sequence Flow)</text>
+  
+  <!-- Message Flow -->
+  <line x1="60" y1="305" x2="140" y2="305" stroke="#000" stroke-width="1.5" stroke-dasharray="8,4" marker-end="url(#arrowBpmn)"/>
+  <text x="160" y="310" font-family="Times New Roman, Liberation Serif, serif" font-size="12">поток сообщений (Message Flow)</text>
+  
+  <!-- Association -->
+  <line x1="60" y1="325" x2="140" y2="325" stroke="#000" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="160" y="330" font-family="Times New Roman, Liberation Serif, serif" font-size="12">ассоциация (Association)</text>
+  
+  <!-- Section 3: ДОРОЖКИ -->
+  <rect x="20" y="340" width="780" height="30" fill="#ED7D31" stroke="#000" stroke-width="1.5"/>
+  <text x="410" y="361" font-family="Times New Roman, Liberation Serif, serif" font-size="13" text-anchor="middle" font-weight="bold" fill="white">ДОРОЖКИ (Swimlanes)</text>
+  
+  <rect x="30" y="375" width="760" height="55" fill="#FBE5D6" stroke="#ED7D31" stroke-width="1"/>
+  <text x="60" y="397" font-family="Times New Roman, Liberation Serif, serif" font-size="12" font-weight="bold">Пул (Pool):</text>
+  <text x="155" y="397" font-family="Times New Roman, Liberation Serif, serif" font-size="12">организация / участник процесса</text>
+  <text x="60" y="420" font-family="Times New Roman, Liberation Serif, serif" font-size="12" font-weight="bold">Дорожка (Lane):</text>
+  <text x="185" y="420" font-family="Times New Roman, Liberation Serif, serif" font-size="12">подразделение / роль внутри пула</text>
+  
+  <!-- Section 4: АРТЕФАКТЫ -->
+  <rect x="20" y="435" width="780" height="30" fill="#7030A0" stroke="#000" stroke-width="1.5"/>
+  <text x="410" y="456" font-family="Times New Roman, Liberation Serif, serif" font-size="13" text-anchor="middle" font-weight="bold" fill="white">АРТЕФАКТЫ (Artifacts)</text>
+  
+  <rect x="30" y="470" width="760" height="45" fill="#F2E6FF" stroke="#7030A0" stroke-width="1"/>
+  
+  <!-- Data Object -->
+  <rect x="80" y="478" width="25" height="30" fill="white" stroke="#000" stroke-width="1.2"/>
+  <polygon points="95,478 105,488 105,478" fill="white" stroke="#000" stroke-width="1"/>
+  <text x="120" y="497" font-family="Times New Roman, Liberation Serif, serif" font-size="12">Объект данных</text>
+  
+  <!-- Group -->
+  <rect x="320" y="478" width="50" height="30" rx="5" ry="5" fill="none" stroke="#000" stroke-width="1.2" stroke-dasharray="5,3"/>
+  <text x="385" y="497" font-family="Times New Roman, Liberation Serif, serif" font-size="12">Группа</text>
+  
+  <!-- Text Annotation -->
+  <line x1="560" y1="478" x2="560" y2="508" stroke="#000" stroke-width="1.2"/>
+  <line x1="560" y1="478" x2="600" y2="478" stroke="#000" stroke-width="1.2"/>
+  <line x1="560" y1="508" x2="600" y2="508" stroke="#000" stroke-width="1.2"/>
+  <text x="615" y="497" font-family="Times New Roman, Liberation Serif, serif" font-size="12">Текстовая аннотация</text>
+  
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrowBpmn" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000"/>
+    </marker>
+  </defs>
+  
+  <!-- Source text -->
+  <text x="410" y="540" font-family="Times New Roman, Liberation Serif, serif" font-size="12" text-anchor="middle" font-style="italic">Источник: составлено автором на основе [21; 8, с. 89; 20]</text>
+</svg>
