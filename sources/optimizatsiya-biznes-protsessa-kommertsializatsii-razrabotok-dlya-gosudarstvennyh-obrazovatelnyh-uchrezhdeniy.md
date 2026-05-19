@@ -114,7 +114,7 @@ divisions of Tomsk State University. The Competence Center for
 Corporate Information Systems division was established at Tomsk 
 State University in 2019 as part of the implementation of the Digital 
 University program to optimize the project management system based 
-on the 1C-Bitrix24 platform. 1C-Bitrix allowed introducing digital 
+on the 1C-Битрикс24 platform. 1C-Битрикс allowed introducing digital 
 modules of electronic document management into all systems and 
 processes of the University into the work of Tomsk State University. 
 At this stage of the implementation of the Digital University program, 

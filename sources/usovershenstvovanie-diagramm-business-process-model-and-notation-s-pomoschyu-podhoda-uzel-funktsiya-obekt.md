@@ -8,7 +8,7 @@ https://vestnik-donstu.ru
 УДК 004.94; 303.732 
 Оригинальное теоретическое исследование 
 https://doi.org/10.23947/2687-1653-2025-25-3-256-268    
-Усовершенствование диаграмм Business Process Model and Notation 
+Усовершенствование диаграмм модель и нотация бизнес-процессов 
 с помощью подхода «узел – функция – объект» 
 А.Г. Жихарев
 , Е.В. Малкуш, С.И. Маторин
@@ -58,7 +58,7 @@ EDN: PWKCXM
 © Жихарев А.Г., Малкуш Е.В., Маторин С.И., 2025 
 
 
-Жихарев А.Г. и др. Усовершенствование диаграмм Business Process Model and Notation … 
+Жихарев А.Г. и др. Усовершенствование диаграмм модель и нотация бизнес-процессов … 
  
  
 Информатика, вычислительная техника и управление 
@@ -86,7 +86,7 @@ EDN: PWKCXM
 and notation с помощью подхода «узел – функция – объект». Advanced Engineering Research (Rostov-on-Don). 
 2025;25(3):256–268. https://doi.org/10.23947/2687-1653-2025-25-3-256-268 
 Original Theoretical Research 
-Improving Business Process Model and Notation Diagrams  
+Improving модель и нотация бизнес-процессов Diagrams  
 with the Node-Function-Object Approach 
 Alexander G. Zhikharev
 , Elena V. Malkush, Sergey I. Matorin
@@ -109,7 +109,7 @@ Engineering) tool NFO-toolkit and the Stormbpmn program according to the BPMN ru
 described in the XPDL2 language. 
 Results. Six sequential operations have been developed for converting a NFO diagram into BPMN, and four — for the 
 reverse transformation. The scheme of component production is shown in the context and decomposition, from the 
-requirement for the development of the workflow to the issuance of products. Decompositions of the NFO elements 
+requirement for the development of the управление потоками работ to the issuance of products. Decompositions of the NFO elements 
 “Injection Molding Machine”, “Master” and “Development Department” are presented, each of which corresponds to a 
 decomposition of the same-name track of the BPMN notation pool. It has been proven that converting a BPMN diagram 
 to a NFO improves the description of the process as a whole and to any degree of detail. The NFO approach does not 
@@ -138,12 +138,12 @@ Acknowledgements. The authors would like to thank their colleagues of the Depart
 Systems of Belgorod State National Research University for their assistance in selecting materials on BPMN. In addition, 
 they appreciate the Editorial team of the Journal and the reviewer for their competent expertise and valuable 
 recommendations for improving the article. 
-For citation. Zhikharev AG, Mаlkush EV, Matorin SI. Improving Business Process Model and Notation Diagrams with the Node-
+For citation. Zhikharev AG, Mаlkush EV, Matorin SI. Improving модель и нотация бизнес-процессов Diagrams with the Node-
 Function-Object Approach. Advanced Engineering Research (Rostov-on-Don). 2025;25(3):256–268. https://doi.org/10.23947/ 
 2687-1653-2025-25-3-256-268 
 Введение. Информационные системы и технологии обеспечивают обязательную для современной экономики 
 автоматизацию технологических процессов и производств [1]. Так, в 2024 году аналитический портал 
-IaaSSaaSPaaS сообщил, что BPM-системами (от англ. business process management system) в России пользуются 
+IaaSПО как услугаPaaS сообщил, что система управления бизнес-процессамими (от англ. business process management system) в России пользуются 
 около 12 тыс. организаций, внедрением занимаются сотни ИТ-компаний3. 
 Неотъемлемая часть процедуры создания таких решений — формулирование требований к ним. Это важный 
 элемент проектирования [2], который базируется на моделировании и анализе автоматизируемых процессов [3]. 
@@ -191,7 +191,7 @@ bpmn_diagrams_part1_ru (дата обращения: 12.06.2025).
 8 Почему следует отказаться от BPMN URL: https://habr.com/ru/articles/681262/ (дата обращения: 12.06.2025).  
 
 
-Жихарев А.Г. и др. Усовершенствование диаграмм Business Process Model and Notation … 
+Жихарев А.Г. и др. Усовершенствование диаграмм модель и нотация бизнес-процессов … 
  
  
 Информатика, вычислительная техника и управление 
@@ -284,7 +284,7 @@ UFO-toolkit, диаграмма BPMN (рис. 3) — c помощью прогр
 Рис. 2. Декомпозиция контекстной УФО-диаграммы 
 
 
-Жихарев А.Г. и др. Усовершенствование диаграмм Business Process Model and Notation … 
+Жихарев А.Г. и др. Усовершенствование диаграмм модель и нотация бизнес-процессов … 
  
  
 Информатика, вычислительная техника и управление 
@@ -426,7 +426,7 @@ https://vestnik-donstu.ru
 разработан
 
 
-Жихарев А.Г. и др. Усовершенствование диаграмм Business Process Model and Notation … 
+Жихарев А.Г. и др. Усовершенствование диаграмм модель и нотация бизнес-процессов … 
  
  
 Информатика, вычислительная техника и управление 
@@ -502,7 +502,7 @@ XPDEL10) позволяют автоматизировать организац�
 10 XPDL Support and Resources. URL: https://wfmc.org/xpdl/ (дата обращения: 08.06.2025). 
 
 
-Жихарев А.Г. и др. Усовершенствование диаграмм Business Process Model and Notation … 
+Жихарев А.Г. и др. Усовершенствование диаграмм модель и нотация бизнес-процессов … 
  
  
 Информатика, вычислительная техника и управление 
@@ -581,7 +581,7 @@ https://vestnik-donstu.ru
 266 
 Таблица показывает, что при преобразовании диаграмм BPMN в УФО сохраняется возможность их трансля-
 ции на язык исполнения процессов. 
-Обсуждение. Итак, в BPM-системах для построения моделей процессов с целью их автоматизации может 
+Обсуждение. Итак, в система управления бизнес-процессамих для построения моделей процессов с целью их автоматизации может 
 использоваться не только нотация BPMN, но и УФО-нотация, обеспечивающая более простую процедуру созда-
 ния моделей и большую их наглядность. 
 Об адекватности и прикладной ценности такого подхода позволяют судить составленные авторами: 
@@ -637,7 +637,7 @@ Engineering Research (Rostov-on-Don). 2023;23(2):155–168. https://doi.org/10.2
 https://doi.org/10.23947/2687-1653-2020-20-3-311-316 
 
 
-Жихарев А.Г. и др. Усовершенствование диаграмм Business Process Model and Notation … 
+Жихарев А.Г. и др. Усовершенствование диаграмм модель и нотация бизнес-процессов … 
  
  
 Информатика, вычислительная техника и управление 
