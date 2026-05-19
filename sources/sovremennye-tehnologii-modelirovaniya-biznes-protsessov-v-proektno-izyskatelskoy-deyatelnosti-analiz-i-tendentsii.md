@@ -49,10 +49,10 @@ opens new horizons for enhancing the efficiency and competitiveness of organizat
 presents a comprehensive analysis of business process modeling technologies and tools, conducted 
 through a comparative approach. The article outlines the qualitative characteristics of traditional and 
 modern methods of business process management in project and survey activity, enabling the formulation 
-of scientifically grounded choices for optimizing workflows and adapting them to the specific nature of 
+of scientifically grounded choices for optimizing управление потоками работs and adapting them to the specific nature of 
 project and survey activity. The results of the analysis indicate that the integration of contemporary digital 
 technologies, particularly Big Data analytics and cloud technologies, contributes to improved quality of 
-managerial decisions, identification of bottlenecks, and optimization of workflows in project and survey 
+managerial decisions, identification of bottlenecks, and optimization of управление потоками работs in project and survey 
 activity. The authors emphasize the importance of flexibility and adaptability in project management, as 
 well as the necessity of implementing innovative methods for successfully achieving project objectives. 
 The recommendations presented in the article are directed towards project and survey organizations and 
@@ -869,7 +869,7 @@ Journal of Economics, Entrepreneurship and Law  #12’2024 (December)
 10. Zareen S., Anwar S.M. BPMN extension evaluation for security requirements engineering 
 framework // Requirements Engineering. – 2024. – № 2. – p. 261–278. – doi: 10.1007/
 s00766–024–00420–7.
-11. da Silva I.B., Cabeça M.G., Barbosa G.F. et al. Lean Six Sigma for the automotive industry 
+11. da Silva I.B., Cabeça M.G., Barbosa G.F. et al. Бережливое производство + Шесть сигм for the automotive industry 
 through the tools and aspects within metrics: a literature review // The International 
 Journal of Advanced Manufacturing Technology. – 2022. – № 3–4. – p. 1357–1383. – doi: 
 10.1007/s00170–021–08336–0.
@@ -971,7 +971,7 @@ construction]. Economic and Human Sciences. (10). 116–121. (in Russian).
 Zareen S., Anwar S.M. (2024). BPMN extension evaluation for security requirements 
 engineering framework Requirements Engineering. 29 (2). 261–278. doi: 10.1007/
 s00766–024–00420–7.
-da Silva I.B., Cabeça M.G., Barbosa G.F. et al. (2022). Lean Six Sigma for the automotive 
+da Silva I.B., Cabeça M.G., Barbosa G.F. et al. (2022). Бережливое производство + Шесть сигм for the automotive 
 industry through the tools and aspects within metrics: a literature review The 
 International Journal of Advanced Manufacturing Technology. 119 (3–4). 1357–
 1383. doi: 10.1007/s00170–021–08336–0.

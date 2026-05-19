@@ -652,7 +652,7 @@ https://progressive-economy.ru/
 The content is available under Creative Commons Attribution 4.0 License.
 57
 13.
-Object Management Group (OMG). Business Process Model and
+группой по управлению объектами (OMG). Business Process Model and
 Notation 
 (BPMN) 
 Version 
@@ -740,7 +740,7 @@ klyuchevykh tsennostei v innovatsionnom klastere [Segmentation of consumers and
 identification of key values in an innovative cluster]. Innovatsii [Innovations],
 5(235), 47–55. (In Russ., abstract in Eng.)
 13.
-Object Management Group (OMG). (n.d.). Business Process Model and
+группой по управлению объектами (OMG). (n.d.). Business Process Model and
 Notation 
 (BPMN) 
 Version 
