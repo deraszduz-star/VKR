@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="780" viewBox="0 0 1400 780">
+  <defs>
+    <marker id="arr322" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000"/>
+    </marker>
+  </defs>
+  <style>
+    .ttl{font-family:'Times New Roman',serif;font-size:15px;font-weight:bold;text-anchor:middle}
+    .lbl{font-family:'Times New Roman',serif;font-size:11px;text-anchor:middle}
+    .lblb{font-family:'Times New Roman',serif;font-size:12px;text-anchor:middle;font-weight:bold}
+    .src{font-family:'Times New Roman',serif;font-size:13px;text-anchor:middle;font-style:italic}
+    .ar{stroke:#000;stroke-width:1.5;fill:none}
+    .evt{fill:#FCE4D6;stroke:#000;stroke-width:1.3}
+    .fn{fill:#E2EFDA;stroke:#000;stroke-width:1.3}
+    /* Решение/устранение узкого места — зелёный фон */
+    .fix{fill:#D5F5D9;stroke:#0a7d2a;stroke-width:1.3}
+    .fixT{font-family:'Times New Roman',serif;font-size:11px;text-anchor:middle;fill:#0a4d18}
+    /* Зачёркнутый AS IS — серый */
+    .strike{fill:#eee;stroke:#999;stroke-width:1;stroke-dasharray:3,2}
+    .strikeT{font-family:'Times New Roman',serif;font-size:10px;text-anchor:middle;fill:#888;text-decoration:line-through}
+  </style>
+
+  <rect width="1400" height="780" fill="white"/>
+  <text x="700" y="28" class="ttl">Рис. 3.2.2. EPC-модель «Регистрация экспонатов в КАМИС» (TO BE): устранённые узкие места</text>
+
+  <text x="200" y="62" class="lblb">Узкое место AS IS</text>
+  <text x="700" y="62" class="lblb">Решение TO BE</text>
+  <text x="1140" y="62" class="lblb">Эффект</text>
+
+  <!-- ROW 1 -->
+  <rect x="60" y="80" width="280" height="60" class="strike"/>
+  <text x="200" y="100" class="strikeT" font-weight="bold">Ежедневная настройка фотозоны</text>
+  <text x="200" y="116" class="strikeT">(5 мин/день)</text>
+  <text x="200" y="132" class="strikeT">5С не применяется</text>
+
+  <line x1="340" y1="110" x2="430" y2="110" class="ar" marker-end="url(#arr322)"/>
+  <text x="385" y="105" class="lbl">→</text>
+
+  <rect x="430" y="80" width="320" height="60" class="fix"/>
+  <text x="590" y="100" class="fixT" font-weight="bold">Стационарная фотозона</text>
+  <text x="590" y="116" class="fixT">(закреплённый фон, освещение)</text>
+  <text x="590" y="132" class="fixT">5С: Сэйтон — рациональное расположение</text>
+
+  <line x1="750" y1="110" x2="970" y2="110" class="ar" marker-end="url(#arr322)"/>
+
+  <rect x="970" y="80" width="340" height="60" fill="#fff7e6" stroke="#888"/>
+  <text x="1140" y="100" class="lbl" font-weight="bold">−5 мин/день</text>
+  <text x="1140" y="118" class="lbl">высвобождение времени на</text>
+  <text x="1140" y="132" class="lbl">научную атрибуцию</text>
+
+  <!-- ROW 2 -->
+  <rect x="60" y="160" width="280" height="60" class="strike"/>
+  <text x="200" y="180" class="strikeT" font-weight="bold">Поиск расходных материалов</text>
+  <text x="200" y="196" class="strikeT">(2,5 мин/экспонат)</text>
+
+  <line x1="340" y1="190" x2="430" y2="190" class="ar" marker-end="url(#arr322)"/>
+
+  <rect x="430" y="160" width="320" height="60" class="fix"/>
+  <text x="590" y="180" class="fixT" font-weight="bold">Органайзер на рабочем месте</text>
+  <text x="590" y="196" class="fixT">(клей, номера, штангенциркуль —</text>
+  <text x="590" y="212" class="fixT">фиксированные позиции; 5С: Сэйри + Сэйтон)</text>
+
+  <line x1="750" y1="190" x2="970" y2="190" class="ar" marker-end="url(#arr322)"/>
+
+  <rect x="970" y="160" width="340" height="60" fill="#fff7e6" stroke="#888"/>
+  <text x="1140" y="180" class="lbl" font-weight="bold">−2,5 мин/экспонат</text>
+  <text x="1140" y="198" class="lbl">×30 экспонатов/день =</text>
+  <text x="1140" y="212" class="lbl">−75 мин/день</text>
+
+  <!-- ROW 3 — КРИТИЧЕСКОЕ -->
+  <rect x="60" y="240" width="280" height="80" fill="#FFD6D6" stroke="#C00000" stroke-width="2" stroke-dasharray="3,2"/>
+  <text x="200" y="260" class="strikeT" font-weight="bold" fill="#C00000">⚠⚠ КРИТИЧЕСКОЕ:</text>
+  <text x="200" y="278" class="strikeT" fill="#C00000">Ожидание прогрузки</text>
+  <text x="200" y="294" class="strikeT" fill="#C00000">Госкаталога — 10 мин</text>
+  <text x="200" y="310" class="strikeT" fill="#C00000">(22 % цикла)</text>
+
+  <line x1="340" y1="280" x2="430" y2="280" class="ar" marker-end="url(#arr322)"/>
+
+  <rect x="430" y="240" width="320" height="80" class="fix" stroke-width="2"/>
+  <text x="590" y="260" class="fixT" font-weight="bold">Пакетная офлайн-выгрузка</text>
+  <text x="590" y="278" class="fixT">(лаборант продолжает работу со</text>
+  <text x="590" y="294" class="fixT">следующим экспонатом, пока</text>
+  <text x="590" y="310" class="fixT">система синхронизируется в фоне)</text>
+
+  <line x1="750" y1="280" x2="970" y2="280" class="ar" marker-end="url(#arr322)"/>
+
+  <rect x="970" y="240" width="340" height="80" fill="#d4edda" stroke="#0a7d2a" stroke-width="1.5"/>
+  <text x="1140" y="262" class="fixT" font-weight="bold">−100 % блокирующего ожидания</text>
+  <text x="1140" y="280" class="fixT">10 мин → 0 мин</text>
+  <text x="1140" y="298" class="fixT">(теория ограничений —</text>
+  <text x="1140" y="312" class="fixT">устранение узкого места)</text>
+
+  <!-- ROW 4 -->
+  <rect x="60" y="340" width="280" height="60" class="strike"/>
+  <text x="200" y="360" class="strikeT" font-weight="bold">Описание «с нуля»</text>
+  <text x="200" y="376" class="strikeT">(нет шаблонов карточек)</text>
+  <text x="200" y="392" class="strikeT">−1 мин/экспонат + ошибки</text>
+
+  <line x1="340" y1="370" x2="430" y2="370" class="ar" marker-end="url(#arr322)"/>
+
+  <rect x="430" y="340" width="320" height="60" class="fix"/>
+  <text x="590" y="360" class="fixT" font-weight="bold">Типовые шаблоны карточек</text>
+  <text x="590" y="376" class="fixT">по 3 категориям (минералы,</text>
+  <text x="590" y="392" class="fixT">горные породы, палеонтология)</text>
+
+  <line x1="750" y1="370" x2="970" y2="370" class="ar" marker-end="url(#arr322)"/>
+
+  <rect x="970" y="340" width="340" height="60" fill="#fff7e6" stroke="#888"/>
+  <text x="1140" y="360" class="lbl" font-weight="bold">−1 мин/экспонат</text>
+  <text x="1140" y="378" class="lbl">снижение вероятности ошибок</text>
+  <text x="1140" y="392" class="lbl">через стандартизацию</text>
+
+  <!-- ROW 5 -->
+  <rect x="60" y="420" width="280" height="60" class="strike"/>
+  <text x="200" y="440" class="strikeT" font-weight="bold">Ученый выполняет</text>
+  <text x="200" y="456" class="strikeT">работу лаборанта</text>
+  <text x="200" y="472" class="strikeT">(90 % времени)</text>
+
+  <line x1="340" y1="450" x2="430" y2="450" class="ar" marker-end="url(#arr322)"/>
+
+  <rect x="430" y="420" width="320" height="60" class="fix"/>
+  <text x="590" y="440" class="fixT" font-weight="bold">Привлечение лаборанта;</text>
+  <text x="590" y="456" class="fixT">заведующая — на верификации</text>
+  <text x="590" y="472" class="fixT">и научной работе</text>
+
+  <line x1="750" y1="450" x2="970" y2="450" class="ar" marker-end="url(#arr322)"/>
+
+  <rect x="970" y="420" width="340" height="60" fill="#fff7e6" stroke="#888"/>
+  <text x="1140" y="440" class="lbl" font-weight="bold">+7 часов/день для научной</text>
+  <text x="1140" y="458" class="lbl">работы; рост публикационной</text>
+  <text x="1140" y="472" class="lbl">активности</text>
+
+  <!-- ROW 6 -->
+  <rect x="60" y="500" width="280" height="60" class="strike"/>
+  <text x="200" y="520" class="strikeT" font-weight="bold">Перемещение к компьютеру</text>
+  <text x="200" y="536" class="strikeT">(1,5 мин/экспонат)</text>
+
+  <line x1="340" y1="530" x2="430" y2="530" class="ar" marker-end="url(#arr322)"/>
+
+  <rect x="430" y="500" width="320" height="60" class="fix"/>
+  <text x="590" y="520" class="fixT" font-weight="bold">Компьютер рядом с фотозоной</text>
+  <text x="590" y="536" class="fixT">(единое рабочее место,</text>
+  <text x="590" y="552" class="fixT">5С: Сэйтон)</text>
+
+  <line x1="750" y1="530" x2="970" y2="530" class="ar" marker-end="url(#arr322)"/>
+
+  <rect x="970" y="500" width="340" height="60" fill="#fff7e6" stroke="#888"/>
+  <text x="1140" y="520" class="lbl" font-weight="bold">−1,5 мин/экспонат</text>
+  <text x="1140" y="538" class="lbl">×30 = −45 мин/день</text>
+
+  <!-- Итоговый блок -->
+  <rect x="80" y="600" width="1240" height="100" fill="#d4edda" stroke="#0a7d2a" stroke-width="2"/>
+  <text x="700" y="622" class="lblb">Совокупный эффект EPC TO BE</text>
+  <text x="100" y="644" class="lbl" text-anchor="start">• Время цикла: 45 мин → 18 мин/экспонат (−60 %)   • Производительность: 9 → 30 экспонатов/день (×3,3)</text>
+  <text x="100" y="664" class="lbl" text-anchor="start">• Доля НДЦ: 64 % → ~11 %   • Стоимость 1 экспоната: 138 руб. → 55 руб. (−60 %)</text>
+  <text x="100" y="684" class="lbl" text-anchor="start">• Прогноз полной инвентаризации (2 000 ед.): &gt;1 года → ~3,5 мес.</text>
+
+  <text x="700" y="755" class="src">Источник: составлено автором.</text>
+</svg>

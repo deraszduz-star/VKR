@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820">
+  <defs>
+    <marker id="arr314" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000"/>
+    </marker>
+  </defs>
+  <style>
+    .ttl{font-family:'Times New Roman',serif;font-size:15px;font-weight:bold;text-anchor:middle}
+    .lbl{font-family:'Times New Roman',serif;font-size:12px;text-anchor:middle}
+    .lbls{font-family:'Times New Roman',serif;font-size:11px;text-anchor:middle}
+    .lblL{font-family:'Times New Roman',serif;font-size:11px}
+    .src{font-family:'Times New Roman',serif;font-size:13px;text-anchor:middle;font-style:italic}
+    .blk{fill:#e8f4e8;stroke:#000;stroke-width:2}
+    .icom{fill:#f0f0f0;stroke:#000;stroke-width:1.3}
+    .ar{stroke:#000;stroke-width:1.5;fill:none}
+  </style>
+
+  <rect width="1400" height="820" fill="white"/>
+  <text x="700" y="28" class="ttl">Рис. 3.1.4. IDEF0-модель «Управление кадровыми процессами КФУ» (AS IS): контекстная диаграмма А-0 и декомпозиция уровня А0</text>
+
+  <!-- LEFT: Контекстная диаграмма -->
+  <text x="320" y="60" class="ttl">А-0. Контекстная диаграмма</text>
+
+  <rect x="170" y="80" width="300" height="60" class="icom"/>
+  <text x="320" y="100" class="lbl" font-weight="bold">Управление (C)</text>
+  <text x="320" y="118" class="lbls">Трудовой кодекс РФ; внутренние регламенты КФУ;</text>
+  <text x="320" y="132" class="lbls">Положение об Управлении кадров; приказы ректора</text>
+  <line x1="320" y1="140" x2="320" y2="240" class="ar" marker-end="url(#arr314)"/>
+
+  <rect x="200" y="245" width="240" height="120" class="blk"/>
+  <text x="320" y="285" class="lbl" font-weight="bold">А0</text>
+  <text x="320" y="307" class="lbl">Управление кадровыми</text>
+  <text x="320" y="324" class="lbl">процессами КФУ</text>
+
+  <rect x="20" y="265" width="150" height="80" class="icom"/>
+  <text x="95" y="285" class="lbl" font-weight="bold">Входы (I)</text>
+  <text x="95" y="302" class="lbls">Заявления на отпуск;</text>
+  <text x="95" y="316" class="lbls">заявки на конкурс;</text>
+  <text x="95" y="330" class="lbls">резюме; приказы</text>
+  <line x1="170" y1="305" x2="200" y2="305" class="ar" marker-end="url(#arr314)"/>
+
+  <rect x="470" y="265" width="160" height="80" class="icom"/>
+  <text x="550" y="285" class="lbl" font-weight="bold">Выходы (O)</text>
+  <text x="550" y="302" class="lbls">Утвержденные графики;</text>
+  <text x="550" y="316" class="lbls">конкурсные дела;</text>
+  <text x="550" y="330" class="lbls">отчетность П-4 (НЗ)</text>
+  <line x1="440" y1="305" x2="470" y2="305" class="ar" marker-end="url(#arr314)"/>
+
+  <rect x="170" y="420" width="300" height="60" class="icom"/>
+  <text x="320" y="440" class="lbl" font-weight="bold">Механизмы (M)</text>
+  <text x="320" y="458" class="lbls">39 сотрудников Управления; «Парус»; СЭД «Практика»;</text>
+  <text x="320" y="472" class="lbls">ИАС КФУ; hh.ru; корпоративный сайт</text>
+  <line x1="320" y1="420" x2="320" y2="365" class="ar" marker-end="url(#arr314)"/>
+
+  <line x1="680" y1="60" x2="680" y2="780" stroke="#999" stroke-width="1" stroke-dasharray="6,4"/>
+
+  <!-- RIGHT: Декомпозиция А0 -->
+  <text x="1040" y="60" class="ttl">Декомпозиция уровня А0</text>
+
+  <rect x="900" y="80" width="280" height="40" class="icom"/>
+  <text x="1040" y="105" class="lbls">C: Трудовой кодекс РФ; регламенты КФУ; приказы ректора</text>
+
+  <line x1="780" y1="120" x2="780" y2="160" class="ar"/>
+  <line x1="780" y1="160" x2="1300" y2="160" class="ar"/>
+
+  <text x="710" y="208" class="lblL">I: заявления,</text>
+  <text x="710" y="222" class="lblL">резюме, заявки</text>
+  <line x1="700" y1="220" x2="760" y2="220" class="ar" marker-end="url(#arr314)"/>
+
+  <!-- A1 -->
+  <rect x="760" y="180" width="135" height="80" class="blk"/>
+  <text x="827" y="208" class="lbl" font-weight="bold">А1</text>
+  <text x="827" y="226" class="lbls">Конкурсный</text>
+  <text x="827" y="240" class="lbls">отбор ППС</text>
+  <line x1="827" y1="160" x2="827" y2="180" class="ar" marker-end="url(#arr314)"/>
+
+  <line x1="895" y1="220" x2="930" y2="220" class="ar"/>
+  <line x1="930" y1="220" x2="930" y2="290" class="ar"/>
+  <line x1="930" y1="290" x2="945" y2="290" class="ar" marker-end="url(#arr314)"/>
+  <text x="918" y="278" class="lbls">конкурсное дело</text>
+
+  <!-- A2 -->
+  <rect x="945" y="290" width="135" height="80" class="blk"/>
+  <text x="1012" y="318" class="lbl" font-weight="bold">А2</text>
+  <text x="1012" y="336" class="lbls">Подбор и</text>
+  <text x="1012" y="350" class="lbls">привлечение</text>
+  <text x="1012" y="364" class="lbls">персонала</text>
+  <line x1="1012" y1="160" x2="1012" y2="290" class="ar" marker-end="url(#arr314)"/>
+
+  <line x1="1080" y1="330" x2="1115" y2="330" class="ar"/>
+  <line x1="1115" y1="330" x2="1115" y2="400" class="ar"/>
+  <line x1="1115" y1="400" x2="1130" y2="400" class="ar" marker-end="url(#arr314)"/>
+  <text x="1100" y="388" class="lbls">принятый сотрудник</text>
+
+  <!-- A3 — выделен (проблемный) -->
+  <rect x="1130" y="400" width="135" height="80" fill="#fbe5e5" stroke="#C00000" stroke-width="2.5"/>
+  <text x="1197" y="428" class="lbl" font-weight="bold">А3</text>
+  <text x="1197" y="446" class="lbls">Формирование</text>
+  <text x="1197" y="460" class="lbls">графика отпусков</text>
+  <text x="1197" y="474" class="lbls">ППС ⚠</text>
+  <line x1="1197" y1="160" x2="1197" y2="400" class="ar" marker-end="url(#arr314)"/>
+
+  <line x1="1130" y1="460" x2="1100" y2="460" class="ar"/>
+  <line x1="1100" y1="460" x2="1100" y2="530" class="ar"/>
+  <line x1="1100" y1="530" x2="945" y2="530" class="ar"/>
+  <line x1="945" y1="530" x2="945" y2="510" class="ar" marker-end="url(#arr314)"/>
+  <text x="1020" y="522" class="lbls">утвержденный график</text>
+
+  <!-- A4 -->
+  <rect x="877" y="510" width="135" height="80" class="blk"/>
+  <text x="945" y="538" class="lbl" font-weight="bold">А4</text>
+  <text x="945" y="556" class="lbls">Кадровая</text>
+  <text x="945" y="570" class="lbls">отчетность и</text>
+  <text x="945" y="584" class="lbls">аналитика</text>
+  <line x1="945" y1="160" x2="945" y2="510" class="ar" marker-end="url(#arr314)"/>
+
+  <line x1="877" y1="550" x2="850" y2="550" class="ar"/>
+  <line x1="850" y1="550" x2="850" y2="620" class="ar"/>
+  <line x1="850" y1="620" x2="760" y2="620" class="ar"/>
+  <line x1="760" y1="620" x2="760" y2="630" class="ar" marker-end="url(#arr314)"/>
+  <text x="800" y="612" class="lbls">отчет П-4 (НЗ)</text>
+
+  <!-- A5 -->
+  <rect x="692" y="630" width="135" height="80" class="blk"/>
+  <text x="760" y="658" class="lbl" font-weight="bold">А5</text>
+  <text x="760" y="676" class="lbls">Наградная</text>
+  <text x="760" y="690" class="lbls">деятельность</text>
+  <line x1="760" y1="160" x2="760" y2="630" class="ar" marker-end="url(#arr314)"/>
+
+  <line x1="827" y1="670" x2="1300" y2="670" class="ar"/>
+  <line x1="1300" y1="670" x2="1300" y2="780" class="ar"/>
+  <text x="1310" y="685" class="lblL">O: графики отпусков,</text>
+  <text x="1310" y="700" class="lblL">конкурсные дела,</text>
+  <text x="1310" y="715" class="lblL">отчётность, дипломы</text>
+
+  <line x1="690" y1="760" x2="1300" y2="760" class="ar"/>
+  <line x1="827" y1="760" x2="827" y2="710" class="ar" marker-end="url(#arr314)"/>
+  <line x1="1012" y1="760" x2="1012" y2="370" class="ar" marker-end="url(#arr314)"/>
+  <line x1="1197" y1="760" x2="1197" y2="480" class="ar" marker-end="url(#arr314)"/>
+  <text x="990" y="780" class="lblL">M: 39 сотрудников Управления, «Парус», СЭД «Практика», ИАС КФУ, hh.ru</text>
+
+  <!-- Пометка о проблемном блоке -->
+  <rect x="900" y="746" width="20" height="14" fill="#fbe5e5" stroke="#C00000" stroke-width="2"/>
+  <text x="690" y="800" class="lblL">⚠ Проблемный процесс — детально моделируется в нотациях BPMN/EPC (рис. 3.1.5–3.1.6)</text>
+
+  <text x="700" y="808" class="src">Источник: составлено автором.</text>
+</svg>
