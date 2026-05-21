@@ -1,198 +1,181 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="780" viewBox="0 0 1500 780">
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="700" viewBox="0 0 1500 700">
   <defs>
-    <marker id="arr323" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#000"/>
+    <marker id="ar323" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L10,4 L0,8 z" fill="#000"/>
+    </marker>
+    <marker id="ar323m" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L10,4 L0,8" fill="none" stroke="#000" stroke-width="1"/>
     </marker>
   </defs>
   <style>
-    .ttl{font-family:'Times New Roman',serif;font-size:15px;font-weight:bold;text-anchor:middle}
-    .lbl{font-family:'Times New Roman',serif;font-size:11px;text-anchor:middle}
-    .lblb{font-family:'Times New Roman',serif;font-size:11px;text-anchor:middle;font-weight:bold}
+    .ttl{font-family:'Times New Roman',serif;font-size:16px;font-weight:bold;text-anchor:middle}
+    .lb{font-family:'Times New Roman',serif;font-size:11px;text-anchor:middle}
     .tm{font-family:'Times New Roman',serif;font-size:10px;text-anchor:middle;font-style:italic;fill:#444}
     .src{font-family:'Times New Roman',serif;font-size:13px;text-anchor:middle;font-style:italic}
-    .pool{fill:none;stroke:#000;stroke-width:1.5}
-    .lane{fill:#fafafa;stroke:#888;stroke-width:1}
-    .laneTitle{font-family:'Times New Roman',serif;font-size:12px;font-weight:bold;text-anchor:middle}
-    .ar{stroke:#000;stroke-width:1.5;fill:none}
-    .ardash{stroke:#000;stroke-width:1.3;fill:none;stroke-dasharray:5,4}
-    .msg{stroke:#000;stroke-width:1.3;fill:none;stroke-dasharray:8,4}
-    .dc{fill:#d4edda;stroke:#000;stroke-width:1.3}
-    .ndb{fill:#e2e3e5;stroke:#000;stroke-width:1.3}
-    .auto{fill:#cfe2ff;stroke:#0a4d7a;stroke-width:1.3}
-    .ev{fill:white;stroke-width:2}
-    .gw{fill:white;stroke:#000;stroke-width:1.5}
+    .pool{fill:none;stroke:#000;stroke-width:1.4}
+    .laneT{font-family:'Times New Roman',serif;font-size:12px;font-weight:bold;text-anchor:middle}
+    .ar{stroke:#000;stroke-width:1.3;fill:none}
+    .msg{stroke:#000;stroke-width:1.2;fill:none;stroke-dasharray:6,4}
+    .tk{fill:#FFFFFF;stroke:#000;stroke-width:1.3}
+    .gw{fill:#FFFFFF;stroke:#000;stroke-width:1.3}
+    .ev{fill:#FFFFFF}
   </style>
-
-  <rect width="1500" height="780" fill="white"/>
-  <text x="750" y="28" class="ttl">Рис. 3.2.3. BPMN-модель «Формирование графика отпусков ППС через Битрикс24» (TO BE)</text>
+  <rect width="1500" height="700" fill="white"/>
+  <text x="750" y="26" class="ttl">Рис. 3.2.3. BPMN-модель «Формирование графика отпусков ППС через Битрикс24» (TO BE)</text>
 
   <!-- Pool 1: Сотрудник ППС -->
-  <rect x="40" y="60" width="1430" height="120" class="pool"/>
-  <rect x="40" y="60" width="30" height="120" fill="#548235"/>
-  <text x="55" y="125" class="laneTitle" fill="white" transform="rotate(-90 55 125)">Сотрудник ППС</text>
-  <rect x="70" y="60" width="1400" height="120" class="lane"/>
+  <rect x="40" y="55" width="1430" height="120" class="pool"/>
+  <rect x="40" y="55" width="28" height="120" fill="#F2F2F2" stroke="#000" stroke-width="1.4"/>
+  <text x="54" y="115" class="laneT" transform="rotate(-90 54 115)">Сотрудник ППС</text>
 
-  <!-- Pool 2: Битрикс24 / Отдел ППС -->
-  <rect x="40" y="200" width="1430" height="180" class="pool"/>
-  <rect x="40" y="200" width="30" height="180" fill="#4472C4"/>
-  <text x="55" y="295" class="laneTitle" fill="white" transform="rotate(-90 55 295)">Отдел ППС / Битрикс24</text>
-  <rect x="70" y="200" width="1400" height="90" class="lane"/>
-  <rect x="70" y="200" width="30" height="90" fill="#cfe2ff"/>
-  <text x="85" y="248" class="laneTitle" transform="rotate(-90 85 248)">Битрикс24 (авто)</text>
-  <rect x="70" y="290" width="1400" height="90" class="lane"/>
-  <rect x="70" y="290" width="30" height="90" fill="#D9E2F3"/>
-  <text x="85" y="338" class="laneTitle" transform="rotate(-90 85 338)">Специалист ППС</text>
+  <!-- Pool 2: Отдел ППС / Битрикс24 -->
+  <rect x="40" y="200" width="1430" height="170" class="pool"/>
+  <rect x="40" y="200" width="28" height="170" fill="#F2F2F2" stroke="#000" stroke-width="1.4"/>
+  <text x="54" y="285" class="laneT" transform="rotate(-90 54 285)">Отдел ППС / Битрикс24</text>
+  <line x1="68" y1="200" x2="68" y2="370" stroke="#000" stroke-width="1.4"/>
+  <rect x="68" y="200" width="28" height="85" fill="#FAFAFA"/>
+  <text x="82" y="242" class="laneT" transform="rotate(-90 82 242)">Битрикс24</text>
+  <line x1="96" y1="200" x2="1470" y2="200" stroke="#000" stroke-width="1"/>
+  <line x1="96" y1="285" x2="1470" y2="285" stroke="#000" stroke-width="1"/>
+  <rect x="68" y="285" width="28" height="85" fill="#FAFAFA"/>
+  <text x="82" y="327" class="laneT" transform="rotate(-90 82 327)">Специалист</text>
 
-  <!-- Pool 3: Руководитель + Проректор -->
-  <rect x="40" y="400" width="1430" height="120" class="pool"/>
-  <rect x="40" y="400" width="30" height="120" fill="#7B5BA6"/>
-  <text x="55" y="465" class="laneTitle" fill="white" transform="rotate(-90 55 465)">Руководители</text>
-  <rect x="70" y="400" width="1400" height="60" class="lane"/>
-  <rect x="70" y="400" width="30" height="60" fill="#E5D9F5"/>
-  <text x="85" y="432" class="laneTitle" transform="rotate(-90 85 432)">Руководитель</text>
-  <rect x="70" y="460" width="1400" height="60" class="lane"/>
-  <rect x="70" y="460" width="30" height="60" fill="#E5D9F5"/>
-  <text x="85" y="492" class="laneTitle" transform="rotate(-90 85 492)">Проректор</text>
+  <!-- Pool 3: Руководитель / Проректор -->
+  <rect x="40" y="395" width="1430" height="120" class="pool"/>
+  <rect x="40" y="395" width="28" height="120" fill="#F2F2F2" stroke="#000" stroke-width="1.4"/>
+  <text x="54" y="455" class="laneT" transform="rotate(-90 54 455)">Руководитель / Проректор</text>
 
-  <!-- ============ Поток ============ -->
-  <!-- Шаг 1. Start (триггер) на дорожке Битрикс24 -->
-  <circle cx="125" cy="245" r="14" class="ev" stroke="#548235"/>
-  <text x="125" y="275" class="lbl">Срок формирования</text>
-  <text x="125" y="288" class="lbl">графика (триггер)</text>
+  <!-- ============ FLOW ============ -->
+  <!-- (B24) Start: Срок -->
+  <circle cx="135" cy="240" r="14" class="ev" stroke="#000" stroke-width="1.3"/>
+  <text x="135" y="275" class="lb">Срок</text>
+  <text x="135" y="289" class="tm">триггер B24</text>
 
-  <!-- Шаг 2. Авторассылка уведомлений (Битрикс24) -->
-  <line x1="139" y1="245" x2="170" y2="245" class="ar" marker-end="url(#arr323)"/>
-  <rect x="170" y="220" width="130" height="50" rx="8" class="auto"/>
-  <text x="235" y="240" class="lbl">2. Авторассылка</text>
-  <text x="235" y="254" class="lbl">уведомлений ППС</text>
-  <text x="235" y="290" class="tm">0 мин · автомат.</text>
+  <!-- B24 Task: Авто-рассылка -->
+  <line x1="149" y1="240" x2="180" y2="240" class="ar" marker-end="url(#ar323)"/>
+  <rect x="180" y="215" width="110" height="50" rx="8" class="tk"/>
+  <text x="235" y="235" class="lb">Авто-рассылка</text>
+  <text x="235" y="249" class="lb">уведомлений</text>
+  <text x="235" y="280" class="tm">авто</text>
 
-  <!-- Сообщение в дорожку Сотрудник ППС -->
-  <line x1="235" y1="220" x2="235" y2="120" class="msg" marker-end="url(#arr323)"/>
+  <!-- message flow up to сотрудник -->
+  <line x1="380" y1="215" x2="380" y2="135" class="msg" marker-end="url(#ar323m)"/>
+  <text x="423" y="178" class="tm">уведомление</text>
 
-  <!-- Шаг 3. Сотрудник ППС выбирает даты -->
-  <rect x="170" y="95" width="130" height="50" rx="8" class="dc"/>
-  <text x="235" y="115" class="lbl">3. Выбор дат отпуска</text>
-  <text x="235" y="129" class="lbl">в личном кабинете</text>
-  <text x="235" y="155" class="tm">3 мин · ДЦ</text>
+  <!-- Continuation arrow from auto-рассылка to gw -->
+  <line x1="290" y1="240" x2="380" y2="240" class="ar"/>
+  <line x1="380" y1="240" x2="380" y2="215" class="ar"/>
 
-  <!-- Сообщение обратно в Битрикс24 -->
-  <line x1="300" y1="120" x2="350" y2="120" class="ar"/>
-  <line x1="350" y1="120" x2="350" y2="245" class="msg" marker-end="url(#arr323)"/>
+  <!-- Сотрудник Pool: User Task: Выбор дат -->
+  <rect x="325" y="105" width="110" height="50" rx="8" class="tk"/>
+  <text x="380" y="125" class="lb">Выбор дат в</text>
+  <text x="380" y="139" class="lb">личн. кабинете</text>
+  <text x="380" y="170" class="tm">3 мин</text>
 
-  <!-- Шаг 4. XOR (авто) — конфликт расписания? -->
-  <polygon points="370,245 390,225 410,245 390,265" class="gw"/>
-  <text x="390" y="250" class="lblb">×</text>
-  <text x="390" y="208" class="tm">авто-проверка</text>
-  <text x="390" y="290" class="lbl">Конфликт?</text>
+  <!-- message flow back down -->
+  <line x1="435" y1="130" x2="465" y2="130" class="ar"/>
+  <line x1="465" y1="130" x2="465" y2="240" class="msg" marker-end="url(#ar323m)"/>
 
-  <!-- 4а. при конфликте — сообщение сотруднику с альтернативными датами -->
-  <line x1="390" y1="225" x2="390" y2="170" class="ardash"/>
-  <line x1="390" y1="170" x2="170" y2="170" class="ardash" marker-end="url(#arr323)"/>
-  <text x="280" y="165" class="tm">да → предложить альтернативу (+1 мин)</text>
+  <!-- B24: XOR Конфликт? -->
+  <polygon points="490,218 512,240 490,262 468,240" class="gw"/>
+  <line x1="476" y1="226" x2="504" y2="254" stroke="#000" stroke-width="1.2"/>
+  <line x1="504" y1="226" x2="476" y2="254" stroke="#000" stroke-width="1.2"/>
+  <text x="490" y="285" class="lb">Конфликт?</text>
 
-  <!-- Шаг 5. Авто-формирование консолидированного списка -->
-  <line x1="410" y1="245" x2="430" y2="245" class="ar" marker-end="url(#arr323)"/>
-  <text x="418" y="237" class="tm">нет</text>
-  <rect x="430" y="220" width="135" height="50" rx="8" class="auto"/>
-  <text x="497" y="237" class="lbl">5. Авто-формирование</text>
-  <text x="497" y="251" class="lbl">консолидированного</text>
-  <text x="497" y="265" class="lbl">списка отпусков</text>
-  <text x="497" y="290" class="tm">0 мин · автомат.</text>
+  <!-- да — return to user -->
+  <line x1="490" y1="218" x2="490" y2="180" class="ar"/>
+  <line x1="490" y1="180" x2="380" y2="180" class="ar" marker-end="url(#ar323)"/>
+  <text x="435" y="174" class="tm">да: альтернатива</text>
 
-  <!-- Сообщение руководителю -->
-  <line x1="565" y1="245" x2="600" y2="245" class="ar"/>
-  <line x1="600" y1="245" x2="600" y2="425" class="msg" marker-end="url(#arr323)"/>
+  <!-- нет -->
+  <line x1="512" y1="240" x2="540" y2="240" class="ar" marker-end="url(#ar323)"/>
+  <text x="525" y="235" class="tm">нет</text>
 
-  <!-- Шаг 6. Руководитель проверяет список -->
-  <rect x="535" y="405" width="135" height="50" rx="8" class="dc"/>
-  <text x="602" y="425" class="lbl">6. Проверка списка</text>
-  <text x="602" y="439" class="lbl">руководителем</text>
-  <text x="602" y="465" class="tm">5 мин · ДЦ</text>
+  <!-- B24 Task: Авто-формирование списка -->
+  <rect x="540" y="215" width="115" height="50" rx="8" class="tk"/>
+  <text x="597" y="235" class="lb">Формирование</text>
+  <text x="597" y="249" class="lb">списка</text>
+  <text x="597" y="280" class="tm">авто</text>
 
-  <!-- Возврат специалисту ППС -->
-  <line x1="670" y1="425" x2="700" y2="425" class="ar"/>
-  <line x1="700" y1="425" x2="700" y2="335" class="msg" marker-end="url(#arr323)"/>
+  <!-- Send to руководитель -->
+  <line x1="655" y1="240" x2="685" y2="240" class="ar"/>
+  <line x1="685" y1="240" x2="685" y2="430" class="msg" marker-end="url(#ar323m)"/>
 
-  <!-- Шаг 7. Специалист направляет на согласование проректору -->
-  <rect x="635" y="310" width="135" height="50" rx="8" class="dc"/>
-  <text x="702" y="328" class="lbl">7. Направление на</text>
-  <text x="702" y="342" class="lbl">согласование</text>
-  <text x="702" y="356" class="lbl">проректору</text>
-  <text x="702" y="380" class="tm">5 мин · ДЦ</text>
+  <!-- Руководитель: Подтверждение -->
+  <rect x="630" y="430" width="115" height="50" rx="8" class="tk"/>
+  <text x="687" y="450" class="lb">Подтверждение</text>
+  <text x="687" y="464" class="lb">руководителем</text>
+  <text x="687" y="495" class="tm">5 мин</text>
 
-  <!-- Сообщение проректору -->
-  <line x1="770" y1="335" x2="810" y2="335" class="ar"/>
-  <line x1="810" y1="335" x2="810" y2="485" class="msg" marker-end="url(#arr323)"/>
+  <!-- back to специалист (lane below B24) -->
+  <line x1="745" y1="455" x2="800" y2="455" class="ar"/>
+  <line x1="800" y1="455" x2="800" y2="325" class="msg" marker-end="url(#ar323m)"/>
 
-  <!-- Шаг 8. Проректор согласовывает (ЭП) -->
-  <rect x="745" y="465" width="135" height="50" rx="8" class="dc"/>
-  <text x="812" y="483" class="lbl">8. Согласование</text>
-  <text x="812" y="497" class="lbl">единого приказа</text>
-  <text x="812" y="511" class="lbl">(электронная подпись)</text>
-  <text x="812" y="538" class="tm">5 мин · ДЦ</text>
+  <!-- Специалист: Task: Направление на согласование -->
+  <rect x="745" y="300" width="115" height="50" rx="8" class="tk"/>
+  <text x="802" y="320" class="lb">Направление</text>
+  <text x="802" y="334" class="lb">на согласование</text>
+  <text x="802" y="365" class="tm">5 мин</text>
 
-  <!-- Возврат -->
-  <line x1="880" y1="490" x2="920" y2="490" class="ar"/>
-  <line x1="920" y1="490" x2="920" y2="335" class="msg" marker-end="url(#arr323)"/>
+  <!-- send to проректор -->
+  <line x1="860" y1="325" x2="900" y2="325" class="ar"/>
+  <line x1="900" y1="325" x2="900" y2="430" class="msg" marker-end="url(#ar323m)"/>
 
-  <!-- Шаг 9. XOR Согласовано? -->
-  <polygon points="940,335 960,315 980,335 960,355" class="gw"/>
-  <text x="960" y="340" class="lblb">×</text>
-  <text x="960" y="380" class="lbl">Согласовано?</text>
+  <!-- Проректор: Task: Согласование (электр. подпись) -->
+  <rect x="845" y="430" width="115" height="50" rx="8" class="tk"/>
+  <text x="902" y="450" class="lb">Согласование</text>
+  <text x="902" y="464" class="lb">(ЭП)</text>
+  <text x="902" y="495" class="tm">5 мин</text>
 
-  <!-- 9а. при замечаниях — возврат на шаг 5 (формирование списка) -->
-  <line x1="940" y1="335" x2="900" y2="335" class="ardash"/>
-  <line x1="900" y1="335" x2="900" y2="200" class="ardash"/>
-  <line x1="900" y1="200" x2="497" y2="200" class="ardash"/>
-  <line x1="497" y1="200" x2="497" y2="220" class="ardash" marker-end="url(#arr323)"/>
-  <text x="700" y="195" class="tm">нет → возврат с комментарием (+10 мин)</text>
+  <!-- back to специалист -->
+  <line x1="960" y1="455" x2="1005" y2="455" class="ar"/>
+  <line x1="1005" y1="455" x2="1005" y2="325" class="msg" marker-end="url(#ar323m)"/>
 
-  <!-- Шаг 10. Печать единого приказа (специалист) -->
-  <line x1="980" y1="335" x2="1010" y2="335" class="ar" marker-end="url(#arr323)"/>
-  <text x="990" y="327" class="tm">да</text>
-  <rect x="1010" y="310" width="125" height="50" rx="8" class="ndb"/>
-  <text x="1072" y="328" class="lbl">10. Печать единого</text>
-  <text x="1072" y="342" class="lbl">приказа (1 документ</text>
-  <text x="1072" y="356" class="lbl">на подразделение)</text>
-  <text x="1072" y="380" class="tm">2 мин · НДБ</text>
+  <!-- Специалист: XOR Согласовано? -->
+  <polygon points="1030,303 1052,325 1030,347 1008,325" class="gw"/>
+  <line x1="1016" y1="311" x2="1044" y2="339" stroke="#000" stroke-width="1.2"/>
+  <line x1="1044" y1="311" x2="1016" y2="339" stroke="#000" stroke-width="1.2"/>
+  <text x="1030" y="370" class="lb">Согласовано?</text>
 
-  <!-- Шаг 11. Авто-уведомление сотрудникам -->
-  <line x1="1135" y1="335" x2="1135" y2="265" class="ar" marker-end="url(#arr323)"/>
-  <rect x="1070" y="220" width="130" height="50" rx="8" class="auto"/>
-  <text x="1135" y="240" class="lbl">11. Авто-уведомление</text>
-  <text x="1135" y="254" class="lbl">сотрудникам ППС</text>
-  <text x="1135" y="290" class="tm">0 мин · автомат.</text>
+  <!-- нет -->
+  <line x1="1030" y1="303" x2="1030" y2="265" class="ar"/>
+  <line x1="1030" y1="265" x2="802" y2="265" class="ar"/>
+  <line x1="802" y1="265" x2="802" y2="300" class="ar" marker-end="url(#ar323)"/>
+  <text x="900" y="258" class="tm">нет (+10 мин)</text>
 
-  <!-- Сообщение сотрудникам -->
-  <line x1="1135" y1="220" x2="1135" y2="120" class="msg" marker-end="url(#arr323)"/>
+  <!-- да -->
+  <line x1="1052" y1="325" x2="1080" y2="325" class="ar" marker-end="url(#ar323)"/>
+  <text x="1065" y="320" class="tm">да</text>
 
-  <!-- End -->
-  <line x1="1200" y1="245" x2="1240" y2="245" class="ar" marker-end="url(#arr323)"/>
-  <circle cx="1255" cy="245" r="14" fill="white" stroke="#C00000" stroke-width="3.5"/>
-  <text x="1255" y="275" class="lbl">График утверждён,</text>
-  <text x="1255" y="288" class="lbl">сотрудники уведомлены</text>
+  <!-- Task: Печать единого приказа -->
+  <rect x="1080" y="300" width="115" height="50" rx="8" class="tk"/>
+  <text x="1137" y="320" class="lb">Печать единого</text>
+  <text x="1137" y="334" class="lb">приказа</text>
+  <text x="1137" y="365" class="tm">2 мин</text>
 
-  <!-- Легенда -->
-  <rect x="1260" y="60" width="200" height="100" fill="white" stroke="#888"/>
-  <text x="1360" y="78" class="lblb">Цветовая разметка</text>
-  <rect x="1270" y="88" width="14" height="10" class="dc"/><text x="1290" y="97" class="lbl" text-anchor="start">ДЦ — добавляет ценность</text>
-  <rect x="1270" y="103" width="14" height="10" class="ndb"/><text x="1290" y="112" class="lbl" text-anchor="start">НДБ — необходимо</text>
-  <rect x="1270" y="118" width="14" height="10" class="auto"/><text x="1290" y="127" class="lbl" text-anchor="start">автомат. (Битрикс24)</text>
-  <line x1="1270" y1="138" x2="1290" y2="138" class="msg"/><text x="1296" y="142" class="lbl" text-anchor="start">поток сообщений</text>
-  <line x1="1270" y1="152" x2="1290" y2="152" class="ardash"/><text x="1296" y="156" class="lbl" text-anchor="start">петля возврата</text>
+  <!-- Move down to B24 lane: Авто-уведомление -->
+  <line x1="1195" y1="325" x2="1225" y2="325" class="ar"/>
+  <line x1="1225" y1="325" x2="1225" y2="240" class="ar" marker-end="url(#ar323)"/>
 
-  <!-- Сводные показатели -->
-  <rect x="40" y="540" width="1430" height="180" fill="#e6f4e6" stroke="#888"/>
-  <text x="755" y="560" class="lblb">Эффект целевого процесса (TO BE)</text>
-  <text x="60" y="582" class="lbl" text-anchor="start">• Три пула (Сотрудник ППС, Битрикс24/Отдел ППС, Руководители); поток сообщений — электронный, между пулами через систему.</text>
-  <text x="60" y="600" class="lbl" text-anchor="start">• Время обработки 1 заявления: 20 мин (вместо 135 мин, −85 %); ожидание подписи: 1 рабочий день (вместо до 7 дней, −86 %).</text>
-  <text x="60" y="618" class="lbl" text-anchor="start">• Транспортировка документов: 0 ч/мес (вместо 40 ч/мес, −100 %); бумажный документооборот: 0 % (только финальная печать для архива).</text>
-  <text x="60" y="636" class="lbl" text-anchor="start">• Расчётная трудоёмкость: 3 сотрудника (вместо 20, высвобождение 17 человек); затраты на ФОТ: 1,87 млн руб./год (вместо 12,48 млн, −85 %).</text>
-  <text x="60" y="654" class="lbl" text-anchor="start">• Внедрены: автоматическая валидация конфликтов расписаний (Пока-еке), система уведомлений, единый приказ на подразделение, электронная подпись.</text>
-  <text x="60" y="672" class="lbl" text-anchor="start">• Самообслуживание ППС: каждый сотрудник самостоятельно выбирает даты через личный кабинет — приёмная комиссия исключена из процесса.</text>
-  <text x="60" y="694" class="lbl" text-anchor="start">• Высвобожденные сотрудники переориентируются на аналитику HR: мониторинг лояльности, программы адаптации, анализ причин увольнений.</text>
+  <rect x="1225" y="215" width="115" height="50" rx="8" class="tk"/>
+  <text x="1282" y="235" class="lb">Авто-</text>
+  <text x="1282" y="249" class="lb">уведомление</text>
+  <text x="1282" y="280" class="tm">авто</text>
 
-  <text x="750" y="765" class="src">Источник: составлено автором.</text>
+  <!-- message flow up to сотрудник -->
+  <line x1="1282" y1="215" x2="1282" y2="135" class="msg" marker-end="url(#ar323m)"/>
+  <text x="1325" y="178" class="tm">уведомление</text>
+
+  <!-- End event -->
+  <line x1="1340" y1="240" x2="1370" y2="240" class="ar" marker-end="url(#ar323)"/>
+  <circle cx="1385" cy="240" r="14" class="ev" stroke="#000" stroke-width="3"/>
+  <text x="1385" y="275" class="lb">График</text>
+  <text x="1385" y="289" class="lb">утверждён</text>
+
+  <!-- Caption -->
+  <text x="750" y="555" class="lb">Время на 1 заявление: 20 мин (вместо 135 мин); ожидание подписи: до 1 рабочего дня (вместо 7 дней)</text>
+  <text x="750" y="572" class="lb">Транспортировка документов: 0 мин (полностью электронное согласование); единый приказ вместо индивидуальных</text>
+
+  <text x="750" y="675" class="src">Источник: составлено автором.</text>
 </svg>

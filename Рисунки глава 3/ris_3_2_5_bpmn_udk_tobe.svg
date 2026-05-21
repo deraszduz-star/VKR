@@ -1,132 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="600" viewBox="0 0 1500 600">
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="500" viewBox="0 0 1500 500">
   <defs>
-    <marker id="arr325" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#000"/>
+    <marker id="ar325" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L10,4 L0,8 z" fill="#000"/>
     </marker>
   </defs>
   <style>
-    .ttl{font-family:'Times New Roman',serif;font-size:15px;font-weight:bold;text-anchor:middle}
-    .lbl{font-family:'Times New Roman',serif;font-size:11px;text-anchor:middle}
-    .lblb{font-family:'Times New Roman',serif;font-size:11px;text-anchor:middle;font-weight:bold}
+    .ttl{font-family:'Times New Roman',serif;font-size:16px;font-weight:bold;text-anchor:middle}
+    .lb{font-family:'Times New Roman',serif;font-size:11px;text-anchor:middle}
     .tm{font-family:'Times New Roman',serif;font-size:10px;text-anchor:middle;font-style:italic;fill:#444}
     .src{font-family:'Times New Roman',serif;font-size:13px;text-anchor:middle;font-style:italic}
-    .pool{fill:none;stroke:#000;stroke-width:1.5}
-    .lane{fill:#fafafa;stroke:#888;stroke-width:1}
-    .laneTitle{font-family:'Times New Roman',serif;font-size:12px;font-weight:bold;text-anchor:middle}
-    .ar{stroke:#000;stroke-width:1.5;fill:none}
-    .ardash{stroke:#000;stroke-width:1.3;fill:none;stroke-dasharray:5,4}
-    .dc{fill:#d4edda;stroke:#000;stroke-width:1.3}
-    .ndb{fill:#e2e3e5;stroke:#000;stroke-width:1.3}
-    .ndc{fill:#f8d7da;stroke:#000;stroke-width:1.3}
-    .ev{fill:white;stroke-width:2}
-    .gw{fill:white;stroke:#000;stroke-width:1.5}
+    .pool{fill:none;stroke:#000;stroke-width:1.4}
+    .laneT{font-family:'Times New Roman',serif;font-size:12px;font-weight:bold;text-anchor:middle}
+    .ar{stroke:#000;stroke-width:1.3;fill:none}
+    .tk{fill:#FFFFFF;stroke:#000;stroke-width:1.3}
+    .gw{fill:#FFFFFF;stroke:#000;stroke-width:1.3}
+    .ev{fill:#FFFFFF}
   </style>
-
-  <rect width="1500" height="600" fill="white"/>
-  <text x="750" y="28" class="ttl">Рис. 3.2.5. BPMN-модель «Исполнение запросов граждан (оцифрованный архив)» (TO BE)</text>
+  <rect width="1500" height="500" fill="white"/>
+  <text x="750" y="26" class="ttl">Рис. 3.2.5. BPMN-модель «Исполнение запросов граждан (оцифрованный архив)» (TO BE)</text>
 
   <!-- Pool -->
-  <rect x="40" y="60" width="1430" height="350" class="pool"/>
-  <rect x="40" y="60" width="30" height="350" fill="#4472C4"/>
-  <text x="55" y="235" class="laneTitle" fill="white" transform="rotate(-90 55 235)">Отдел по работе с архивными документами</text>
-  <rect x="70" y="60" width="1400" height="350" class="lane"/>
-  <rect x="70" y="60" width="30" height="350" fill="#D9E2F3"/>
-  <text x="85" y="235" class="laneTitle" transform="rotate(-90 85 235)">Ведущий документовед</text>
+  <rect x="40" y="60" width="1430" height="280" class="pool"/>
+  <rect x="40" y="60" width="28" height="280" fill="#F2F2F2" stroke="#000" stroke-width="1.4"/>
+  <text x="54" y="200" class="laneT" transform="rotate(-90 54 200)">Отдел архивных документов</text>
+  <line x1="68" y1="60" x2="68" y2="340" stroke="#000" stroke-width="1.4"/>
+  <rect x="68" y="60" width="28" height="280" fill="#FAFAFA"/>
+  <text x="82" y="200" class="laneT" transform="rotate(-90 82 200)">Ведущий документовед</text>
+  <line x1="96" y1="60" x2="96" y2="340" stroke="#000" stroke-width="1"/>
 
-  <!-- Легенда -->
-  <rect x="1170" y="72" width="290" height="55" fill="white" stroke="#888"/>
-  <text x="1315" y="88" class="lblb">Тип операции</text>
-  <rect x="1180" y="95" width="14" height="10" class="dc"/><text x="1200" y="104" class="lbl" text-anchor="start">ДЦ — добавляет ценность</text>
-  <rect x="1180" y="110" width="14" height="10" class="ndb"/><text x="1200" y="119" class="lbl" text-anchor="start">НДБ — необходимо для бизнеса</text>
-  <rect x="1330" y="95" width="14" height="10" class="ndc"/><text x="1350" y="104" class="lbl" text-anchor="start">НДЦ — потери</text>
+  <!-- Y center = 200 -->
+  <!-- Start -->
+  <circle cx="135" cy="200" r="14" class="ev" stroke="#000" stroke-width="1.3"/>
+  <text x="135" y="237" class="lb">Заявка</text>
+  <text x="135" y="251" class="lb">поступила</text>
 
-  <!-- 1. Start -->
-  <circle cx="125" cy="225" r="14" class="ev" stroke="#548235"/>
-  <text x="125" y="255" class="lbl">Поступление заявки</text>
-  <text x="125" y="268" class="lbl">(почта/визит)</text>
+  <!-- Task: Регистрация в эл. журнале -->
+  <line x1="149" y1="200" x2="180" y2="200" class="ar" marker-end="url(#ar325)"/>
+  <rect x="180" y="175" width="110" height="50" rx="8" class="tk"/>
+  <text x="235" y="195" class="lb">Регистрация в</text>
+  <text x="235" y="209" class="lb">эл. журнале</text>
+  <text x="235" y="248" class="tm">30 с</text>
 
-  <!-- 2. Регистрация в эл. журнале -->
-  <line x1="139" y1="225" x2="170" y2="225" class="ar" marker-end="url(#arr325)"/>
-  <rect x="170" y="200" width="105" height="50" rx="8" class="ndb"/>
-  <rect x="175" y="204" width="9" height="7" fill="#4472C4"/>
-  <text x="222" y="218" class="lbl">2. Регистрация</text>
-  <text x="222" y="232" class="lbl">в электронном</text>
-  <text x="222" y="246" class="lbl">журнале</text>
-  <text x="222" y="270" class="tm">30 сек · НДБ</text>
+  <!-- Task: Электронный поиск -->
+  <line x1="290" y1="200" x2="315" y2="200" class="ar" marker-end="url(#ar325)"/>
+  <rect x="315" y="175" width="115" height="50" rx="8" class="tk"/>
+  <text x="372" y="195" class="lb">Электронный</text>
+  <text x="372" y="209" class="lb">поиск (OCR)</text>
+  <text x="372" y="248" class="tm">2 мин</text>
 
-  <!-- 3. Электронный поиск -->
-  <line x1="275" y1="225" x2="300" y2="225" class="ar" marker-end="url(#arr325)"/>
-  <rect x="300" y="200" width="115" height="50" rx="8" class="ndb"/>
-  <rect x="305" y="204" width="9" height="7" fill="#4472C4"/>
-  <text x="357" y="218" class="lbl">3. Электронный</text>
-  <text x="357" y="232" class="lbl">поиск (по ФИО,</text>
-  <text x="357" y="246" class="lbl">году, № дела)</text>
-  <text x="357" y="270" class="tm" fill="#0a7d2a" font-weight="bold">2 мин · вместо 15 мин</text>
+  <!-- XOR: Найден в эл. базе? -->
+  <line x1="430" y1="200" x2="455" y2="200" class="ar" marker-end="url(#ar325)"/>
+  <polygon points="480,178 502,200 480,222 458,200" class="gw"/>
+  <line x1="466" y1="186" x2="494" y2="214" stroke="#000" stroke-width="1.2"/>
+  <line x1="494" y1="186" x2="466" y2="214" stroke="#000" stroke-width="1.2"/>
+  <text x="480" y="247" class="lb">В эл. базе?</text>
 
-  <!-- 4. XOR — найден в эл. базе? -->
-  <line x1="415" y1="225" x2="440" y2="225" class="ar" marker-end="url(#arr325)"/>
-  <polygon points="465,225 485,205 505,225 485,245" class="gw"/>
-  <text x="485" y="230" class="lblb">×</text>
-  <text x="485" y="270" class="lbl">Найден в эл. базе?</text>
+  <!-- нет — physical search (для не вошедших в пилот) -->
+  <line x1="480" y1="178" x2="480" y2="120" class="ar"/>
+  <line x1="480" y1="120" x2="600" y2="120" class="ar"/>
+  <line x1="600" y1="120" x2="600" y2="175" class="ar" marker-end="url(#ar325)"/>
+  <text x="540" y="113" class="tm">нет</text>
 
-  <!-- 4а. при отсутствии — физический поиск (для не-оцифрованных) -->
-  <line x1="485" y1="245" x2="485" y2="320" class="ardash"/>
-  <text x="495" y="285" class="tm">нет</text>
-  <rect x="375" y="320" width="220" height="40" rx="8" class="ndc"/>
-  <text x="485" y="338" class="lbl">4а. Физический поиск</text>
-  <text x="485" y="352" class="lbl">(для не вошедших в оцифровку)</text>
-  <text x="485" y="375" class="tm">10 мин · НДЦ</text>
-  <line x1="595" y1="340" x2="660" y2="340" class="ardash"/>
-  <line x1="660" y1="340" x2="660" y2="225" class="ardash" marker-end="url(#arr325)"/>
+  <rect x="545" y="175" width="110" height="50" rx="8" class="tk"/>
+  <text x="600" y="195" class="lb">Физический</text>
+  <text x="600" y="209" class="lb">поиск</text>
+  <text x="600" y="248" class="tm">10 мин</text>
 
-  <!-- 5. Просмотр электронной копии -->
-  <line x1="505" y1="225" x2="525" y2="225" class="ar" marker-end="url(#arr325)"/>
-  <text x="513" y="217" class="tm">да</text>
-  <rect x="525" y="200" width="115" height="50" rx="8" class="dc"/>
-  <rect x="530" y="204" width="9" height="7" fill="#4472C4"/>
-  <text x="582" y="218" class="lbl">5. Просмотр</text>
-  <text x="582" y="232" class="lbl">электронной копии,</text>
-  <text x="582" y="246" class="lbl">выписка данных</text>
-  <text x="582" y="270" class="tm">2 мин · ДЦ</text>
+  <!-- merge back -->
+  <line x1="600" y1="225" x2="600" y2="260" class="ar"/>
+  <line x1="600" y1="260" x2="700" y2="260" class="ar"/>
+  <line x1="700" y1="260" x2="700" y2="200" class="ar" marker-end="url(#ar325)"/>
 
-  <!-- 6. Формирование справки -->
-  <line x1="640" y1="225" x2="665" y2="225" class="ar" marker-end="url(#arr325)"/>
-  <rect x="665" y="200" width="115" height="50" rx="8" class="dc"/>
-  <text x="722" y="218" class="lbl">6. Формирование</text>
-  <text x="722" y="232" class="lbl">архивной справки</text>
-  <text x="722" y="246" class="lbl">(автозаполнение)</text>
-  <text x="722" y="270" class="tm">2 мин · ДЦ</text>
+  <!-- да -->
+  <line x1="502" y1="200" x2="685" y2="200" class="ar"/>
+  <text x="525" y="195" class="tm">да</text>
 
-  <!-- 7. Заверение -->
-  <line x1="780" y1="225" x2="805" y2="225" class="ar" marker-end="url(#arr325)"/>
-  <rect x="805" y="200" width="100" height="50" rx="8" class="ndb"/>
-  <text x="855" y="218" class="lbl">7. Заверение</text>
-  <text x="855" y="232" class="lbl">справки (подпись,</text>
-  <text x="855" y="246" class="lbl">печать)</text>
-  <text x="855" y="270" class="tm">1 мин · НДБ</text>
+  <!-- Task: Просмотр электронной копии -->
+  <rect x="700" y="175" width="115" height="50" rx="8" class="tk"/>
+  <text x="757" y="195" class="lb">Просмотр</text>
+  <text x="757" y="209" class="lb">эл. копии</text>
+  <text x="757" y="248" class="tm">2 мин</text>
 
-  <!-- 8. Выдача -->
-  <line x1="905" y1="225" x2="930" y2="225" class="ar" marker-end="url(#arr325)"/>
-  <rect x="930" y="200" width="115" height="50" rx="8" class="dc"/>
-  <text x="987" y="218" class="lbl">8. Выдача справки</text>
-  <text x="987" y="232" class="lbl">заявителю/почтой/</text>
-  <text x="987" y="246" class="lbl">СДЭК</text>
-  <text x="987" y="270" class="tm">1 мин 30 сек · ДЦ</text>
+  <!-- Task: Формирование справки -->
+  <line x1="815" y1="200" x2="840" y2="200" class="ar" marker-end="url(#ar325)"/>
+  <rect x="840" y="175" width="115" height="50" rx="8" class="tk"/>
+  <text x="897" y="195" class="lb">Формирование</text>
+  <text x="897" y="209" class="lb">справки</text>
+  <text x="897" y="248" class="tm">2 мин</text>
+
+  <!-- Task: Заверение -->
+  <line x1="955" y1="200" x2="980" y2="200" class="ar" marker-end="url(#ar325)"/>
+  <rect x="980" y="175" width="105" height="50" rx="8" class="tk"/>
+  <text x="1032" y="195" class="lb">Заверение</text>
+  <text x="1032" y="209" class="lb">справки</text>
+  <text x="1032" y="248" class="tm">1 мин</text>
+
+  <!-- Task: Выдача -->
+  <line x1="1085" y1="200" x2="1110" y2="200" class="ar" marker-end="url(#ar325)"/>
+  <rect x="1110" y="175" width="115" height="50" rx="8" class="tk"/>
+  <text x="1167" y="195" class="lb">Выдача</text>
+  <text x="1167" y="209" class="lb">справки</text>
+  <text x="1167" y="248" class="tm">1 мин 30 с</text>
 
   <!-- End -->
-  <line x1="1045" y1="225" x2="1075" y2="225" class="ar" marker-end="url(#arr325)"/>
-  <circle cx="1090" cy="225" r="14" fill="white" stroke="#C00000" stroke-width="3.5"/>
-  <text x="1090" y="255" class="lbl">Запрос</text>
-  <text x="1090" y="268" class="lbl">исполнен</text>
+  <line x1="1225" y1="200" x2="1255" y2="200" class="ar" marker-end="url(#ar325)"/>
+  <circle cx="1270" cy="200" r="14" class="ev" stroke="#000" stroke-width="3"/>
+  <text x="1270" y="237" class="lb">Запрос</text>
+  <text x="1270" y="251" class="lb">исполнен</text>
 
-  <!-- Сводные показатели -->
-  <rect x="40" y="430" width="1430" height="120" fill="#e6f4e6" stroke="#888"/>
-  <text x="755" y="450" class="lblb">Эффект целевого процесса (TO BE)</text>
-  <text x="60" y="472" class="lbl" text-anchor="start">• Среднее время выдачи справки: 14 мин (850 сек) — вместо 22 мин в AS IS (−36 %).</text>
-  <text x="60" y="490" class="lbl" text-anchor="start">• Время поиска документа: 2 мин (электронный) — вместо 15 мин (физический), −87 %; время доступа к файлу на SSD ≤ 2 сек.</text>
-  <text x="60" y="508" class="lbl" text-anchor="start">• Уровень оцифровки целевого массива: 100 % (30 000 ед. пилотного проекта); точность OCR ≥ 98 %; резервное копирование с зеркалированием SSD.</text>
-  <text x="60" y="526" class="lbl" text-anchor="start">• Доля НДЦ: 68 % → ~15 %. Шлюз XOR сохраняется для документов, не вошедших в пилотный проект (с уменьшенным временем поиска: 10 мин вместо 15).</text>
+  <text x="750" y="395" class="lb">Время цикла: 14 мин на 1 справку (вместо 22 мин) · электронный поиск 2 мин (вместо 15 мин физического)</text>
+  <text x="750" y="412" class="lb">Уровень оцифровки целевого массива: 100 % (30 000 ед.) · точность OCR ≥ 98 % · доля операций НДЦ ≈ 15 %</text>
 
-  <text x="750" y="588" class="src">Источник: составлено автором.</text>
+  <text x="750" y="475" class="src">Источник: составлено автором.</text>
 </svg>
