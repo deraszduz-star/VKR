@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="700" viewBox="0 0 1500 700">
+  <defs>
+    <marker id="arr315" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000"/>
+    </marker>
+  </defs>
+  <style>
+    .ttl{font-family:'Times New Roman',serif;font-size:15px;font-weight:bold;text-anchor:middle}
+    .lbl{font-family:'Times New Roman',serif;font-size:11px;text-anchor:middle}
+    .lblb{font-family:'Times New Roman',serif;font-size:11px;text-anchor:middle;font-weight:bold}
+    .tm{font-family:'Times New Roman',serif;font-size:10px;text-anchor:middle;font-style:italic;fill:#444}
+    .src{font-family:'Times New Roman',serif;font-size:13px;text-anchor:middle;font-style:italic}
+    .pool{fill:none;stroke:#000;stroke-width:1.5}
+    .lane{fill:#fafafa;stroke:#888;stroke-width:1}
+    .laneTitle{font-family:'Times New Roman',serif;font-size:12px;font-weight:bold;text-anchor:middle}
+    .ar{stroke:#000;stroke-width:1.5;fill:none}
+    .ardash{stroke:#000;stroke-width:1.3;fill:none;stroke-dasharray:5,4}
+    .msg{stroke:#000;stroke-width:1.3;fill:none;stroke-dasharray:8,4}
+    .ndb{fill:#e2e3e5;stroke:#000;stroke-width:1.3}
+    .ndc{fill:#f8d7da;stroke:#000;stroke-width:1.3}
+    .dc{fill:#d4edda;stroke:#000;stroke-width:1.3}
+    .ev{fill:white;stroke-width:2}
+    .gw{fill:white;stroke:#000;stroke-width:1.5}
+  </style>
+
+  <rect width="1500" height="700" fill="white"/>
+  <text x="750" y="28" class="ttl">Рис. 3.1.5. BPMN-модель «Формирование графика отпусков ППС» (AS IS)</text>
+
+  <!-- ============ Pool 1: Отдел ППС ============ -->
+  <rect x="40" y="60" width="1430" height="270" class="pool"/>
+  <rect x="40" y="60" width="30" height="270" fill="#4472C4"/>
+  <text x="55" y="195" class="laneTitle" fill="white" transform="rotate(-90 55 195)">Отдел ППС</text>
+  <rect x="70" y="60" width="1400" height="270" class="lane"/>
+  <rect x="70" y="60" width="30" height="270" fill="#D9E2F3"/>
+  <text x="85" y="195" class="laneTitle" transform="rotate(-90 85 195)">Специалист отдела ППС</text>
+
+  <!-- ============ Pool 2: Проректор ============ -->
+  <rect x="40" y="350" width="1430" height="120" class="pool"/>
+  <rect x="40" y="350" width="30" height="120" fill="#7B5BA6"/>
+  <text x="55" y="410" class="laneTitle" fill="white" transform="rotate(-90 55 410)">Проректор</text>
+  <rect x="70" y="350" width="1400" height="120" class="lane"/>
+
+  <!-- ===== Pool 1 поток ===== -->
+  <!-- Start -->
+  <circle cx="125" cy="195" r="14" class="ev" stroke="#548235"/>
+  <text x="125" y="225" class="lbl">Срок формирования</text>
+  <text x="125" y="238" class="lbl">графика</text>
+
+  <!-- 2. Сбор заявлений -->
+  <line x1="139" y1="195" x2="170" y2="195" class="ar" marker-end="url(#arr315)"/>
+  <rect x="170" y="170" width="100" height="50" rx="8" class="ndc"/>
+  <text x="220" y="188" class="lbl">2. Сбор</text>
+  <text x="220" y="202" class="lbl">заявлений</text>
+  <text x="220" y="216" class="lbl">(бумага)</text>
+  <text x="220" y="240" class="tm">5 мин/заявл.</text>
+
+  <!-- 3. Проверка -->
+  <line x1="270" y1="195" x2="295" y2="195" class="ar" marker-end="url(#arr315)"/>
+  <rect x="295" y="170" width="95" height="50" rx="8" class="ndb"/>
+  <text x="342" y="188" class="lbl">3. Проверка</text>
+  <text x="342" y="202" class="lbl">правильности</text>
+  <text x="342" y="216" class="lbl">заполнения</text>
+  <text x="342" y="240" class="tm">3 мин/заявл.</text>
+
+  <!-- 4. XOR корректно? -->
+  <line x1="390" y1="195" x2="415" y2="195" class="ar" marker-end="url(#arr315)"/>
+  <polygon points="440,195 460,175 480,195 460,215" class="gw"/>
+  <text x="460" y="200" class="lblb">×</text>
+  <text x="460" y="240" class="lbl">Корректно?</text>
+
+  <!-- ветвь нет — возврат -->
+  <line x1="460" y1="175" x2="460" y2="105" class="ardash"/>
+  <line x1="460" y1="105" x2="220" y2="105" class="ardash" marker-end="url(#arr315)"/>
+  <text x="340" y="98" class="tm">нет → возврат сотруднику (+1–2 дня)</text>
+
+  <!-- 5. Список -->
+  <line x1="480" y1="195" x2="505" y2="195" class="ar" marker-end="url(#arr315)"/>
+  <text x="490" y="187" class="tm">да</text>
+  <rect x="505" y="170" width="100" height="50" rx="8" class="ndb"/>
+  <text x="555" y="188" class="lbl">5. Формирова-</text>
+  <text x="555" y="202" class="lbl">ние списка по</text>
+  <text x="555" y="216" class="lbl">департаменту</text>
+  <text x="555" y="240" class="tm">17 мин · НДБ</text>
+
+  <!-- 6. Печать -->
+  <line x1="605" y1="195" x2="630" y2="195" class="ar" marker-end="url(#arr315)"/>
+  <rect x="630" y="170" width="100" height="50" rx="8" class="ndc"/>
+  <text x="680" y="188" class="lbl">6. Печать</text>
+  <text x="680" y="202" class="lbl">приказа на</text>
+  <text x="680" y="216" class="lbl">каждого ППС</text>
+  <text x="680" y="240" class="tm">5 мин · НДЦ</text>
+
+  <!-- 7. Транспортировка -->
+  <line x1="730" y1="195" x2="755" y2="195" class="ar" marker-end="url(#arr315)"/>
+  <rect x="755" y="170" width="115" height="50" rx="8" class="ndc"/>
+  <text x="812" y="188" class="lbl">7. Транспорти-</text>
+  <text x="812" y="202" class="lbl">ровка докум.</text>
+  <text x="812" y="216" class="lbl">в гл. здание</text>
+  <text x="812" y="240" class="tm">40 мин (туда) · НДЦ</text>
+
+  <!-- 8. Промежуточное событие — ожидание (на стороне специалиста) -->
+  <line x1="870" y1="195" x2="900" y2="195" class="ar" marker-end="url(#arr315)"/>
+  <circle cx="915" cy="195" r="14" fill="white" stroke="#ED7D31" stroke-width="2"/>
+  <circle cx="915" cy="195" r="10" fill="white" stroke="#ED7D31" stroke-width="1.5"/>
+  <line x1="915" y1="195" x2="915" y2="188" stroke="#ED7D31" stroke-width="1.3"/>
+  <line x1="915" y1="195" x2="921" y2="198" stroke="#ED7D31" stroke-width="1.3"/>
+  <text x="915" y="240" class="tm">⚠ от 4 ч 26 мин до 7 дней</text>
+
+  <!-- 9. Получение -->
+  <line x1="929" y1="195" x2="950" y2="195" class="ar" marker-end="url(#arr315)"/>
+  <rect x="950" y="170" width="115" height="50" rx="8" class="ndc"/>
+  <text x="1007" y="188" class="lbl">9. Получение</text>
+  <text x="1007" y="202" class="lbl">подписанных</text>
+  <text x="1007" y="216" class="lbl">документов</text>
+  <text x="1007" y="240" class="tm">40 мин (обратно) · НДЦ</text>
+
+  <!-- 10. XOR подписаны? -->
+  <line x1="1065" y1="195" x2="1090" y2="195" class="ar" marker-end="url(#arr315)"/>
+  <polygon points="1115,195 1135,175 1155,195 1135,215" class="gw"/>
+  <text x="1135" y="200" class="lblb">×</text>
+  <text x="1135" y="240" class="lbl">Подписаны?</text>
+
+  <!-- ветвь нет — повторный поход -->
+  <line x1="1135" y1="175" x2="1135" y2="105" class="ardash"/>
+  <line x1="1135" y1="105" x2="812" y2="105" class="ardash" marker-end="url(#arr315)"/>
+  <text x="975" y="98" class="tm">нет → повторный поход (+1 день)</text>
+
+  <!-- 11. Уведомление -->
+  <line x1="1155" y1="195" x2="1175" y2="195" class="ar" marker-end="url(#arr315)"/>
+  <text x="1162" y="187" class="tm">да</text>
+  <rect x="1175" y="170" width="105" height="50" rx="8" class="ndb"/>
+  <text x="1227" y="188" class="lbl">11. Уведом-</text>
+  <text x="1227" y="202" class="lbl">ление</text>
+  <text x="1227" y="216" class="lbl">сотрудника</text>
+  <text x="1227" y="240" class="tm">2 мин · НДБ</text>
+
+  <!-- End -->
+  <line x1="1280" y1="195" x2="1310" y2="195" class="ar" marker-end="url(#arr315)"/>
+  <circle cx="1325" cy="195" r="14" fill="white" stroke="#C00000" stroke-width="3.5"/>
+  <text x="1325" y="225" class="lbl">График</text>
+  <text x="1325" y="238" class="lbl">утверждён</text>
+
+  <!-- ===== Pool 2: Проректор ===== -->
+  <!-- Получение документов (бумажный поток сообщений) -->
+  <line x1="812" y1="220" x2="812" y2="370" class="msg" marker-end="url(#arr315)"/>
+  <text x="852" y="290" class="tm">бумажные документы (поток сообщений)</text>
+
+  <rect x="755" y="385" width="115" height="50" rx="8" class="ndc"/>
+  <text x="812" y="403" class="lbl">8a. Подписание</text>
+  <text x="812" y="417" class="lbl">приказов</text>
+  <text x="812" y="431" class="lbl">(вручную)</text>
+  <text x="812" y="455" class="tm">в течение раб. дня</text>
+
+  <!-- возврат документов — обратно специалисту -->
+  <line x1="870" y1="410" x2="950" y2="410" class="ar"/>
+  <line x1="950" y1="410" x2="950" y2="220" class="msg" marker-end="url(#arr315)"/>
+
+  <!-- Нижний инфо-блок -->
+  <rect x="40" y="490" width="1430" height="160" fill="#fff7e6" stroke="#888" stroke-width="1"/>
+  <text x="755" y="510" class="lblb">Сводные характеристики процесса AS IS</text>
+  <text x="60" y="532" class="lbl" text-anchor="start">• Два пула (Отдел ППС, Проректор); поток сообщений — бумажные документы между зданиями.</text>
+  <text x="60" y="550" class="lbl" text-anchor="start">• Время обработки 1 заявления: 55–135 мин (без учёта ожидания подписи); с учётом ожидания — от 6,25 ч до 7,25 рабочих дней.</text>
+  <text x="60" y="568" class="lbl" text-anchor="start">• Критические шлюзы XOR: (1) корректность заявления — при ошибке возврат на доработку (+1–2 дня); (2) присутствие проректора — при отсутствии повторный поход (+1 день).</text>
+  <text x="60" y="586" class="lbl" text-anchor="start">• Совокупные потери на цикл: 192 мин; транспортировка между зданиями: 2 раза/день × 40 мин = 80 мин/день (40 ч/мес); масштаб: 6 615 чел. ППС × 2–3 цикла/год.</text>
+  <text x="60" y="608" class="lbl" text-anchor="start">• Цветовая разметка: ДЦ (зелёный) ≈ 10 %; НДБ (серый) ≈ 15 %; НДЦ (красный) ≈ 75 % — типичная картина процесса с доминированием бумажного документооборота.</text>
+  <text x="60" y="628" class="lbl" text-anchor="start">• Расчётная трудоёмкость: 135 мин × 6 615 × 2 / (168 ч × 12 мес × 0,75) ≈ 20 сотрудников.</text>
+
+  <text x="750" y="688" class="src">Источник: составлено автором.</text>
+</svg>

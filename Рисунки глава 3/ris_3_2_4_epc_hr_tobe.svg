@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="780" viewBox="0 0 1400 780">
+  <defs>
+    <marker id="arr324" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000"/>
+    </marker>
+  </defs>
+  <style>
+    .ttl{font-family:'Times New Roman',serif;font-size:15px;font-weight:bold;text-anchor:middle}
+    .lbl{font-family:'Times New Roman',serif;font-size:11px;text-anchor:middle}
+    .lblb{font-family:'Times New Roman',serif;font-size:12px;text-anchor:middle;font-weight:bold}
+    .src{font-family:'Times New Roman',serif;font-size:13px;text-anchor:middle;font-style:italic}
+    .ar{stroke:#000;stroke-width:1.5;fill:none}
+    .strike{fill:#eee;stroke:#999;stroke-width:1;stroke-dasharray:3,2}
+    .strikeT{font-family:'Times New Roman',serif;font-size:10px;text-anchor:middle;fill:#888}
+    .fix{fill:#D5F5D9;stroke:#0a7d2a;stroke-width:1.3}
+    .fixCrit{fill:#D5F5D9;stroke:#0a7d2a;stroke-width:2}
+    .fixT{font-family:'Times New Roman',serif;font-size:11px;text-anchor:middle;fill:#0a4d18}
+  </style>
+
+  <rect width="1400" height="780" fill="white"/>
+  <text x="700" y="28" class="ttl">Рис. 3.2.4. EPC-модель «Формирование графика отпусков ППС» (TO BE): устранённые узкие места</text>
+
+  <text x="200" y="62" class="lblb">Узкое место AS IS</text>
+  <text x="700" y="62" class="lblb">Решение TO BE</text>
+  <text x="1140" y="62" class="lblb">Эффект</text>
+
+  <!-- ROW 1: критическое — транспортировка -->
+  <rect x="60" y="80" width="280" height="80" fill="#FFD6D6" stroke="#C00000" stroke-width="2" stroke-dasharray="3,2"/>
+  <text x="200" y="100" class="strikeT" font-weight="bold" fill="#C00000">⚠⚠ КРИТИЧЕСКОЕ:</text>
+  <text x="200" y="118" class="strikeT" fill="#C00000">Транспортировка документов</text>
+  <text x="200" y="134" class="strikeT" fill="#C00000">между зданиями</text>
+  <text x="200" y="150" class="strikeT" fill="#C00000">(80 мин/день, 40 ч/мес)</text>
+
+  <line x1="340" y1="120" x2="430" y2="120" class="ar" marker-end="url(#arr324)"/>
+
+  <rect x="430" y="80" width="320" height="80" class="fixCrit"/>
+  <text x="590" y="100" class="fixT" font-weight="bold">Электронное согласование</text>
+  <text x="590" y="118" class="fixT">через Битрикс24</text>
+  <text x="590" y="134" class="fixT">(система управления</text>
+  <text x="590" y="150" class="fixT">бизнес-процессами + ЭДО)</text>
+
+  <line x1="750" y1="120" x2="970" y2="120" class="ar" marker-end="url(#arr324)"/>
+
+  <rect x="970" y="80" width="340" height="80" fill="#d4edda" stroke="#0a7d2a" stroke-width="1.5"/>
+  <text x="1140" y="102" class="fixT" font-weight="bold">−80 мин/день, −40 ч/мес</text>
+  <text x="1140" y="120" class="fixT">−100 % физической</text>
+  <text x="1140" y="136" class="fixT">транспортировки;</text>
+  <text x="1140" y="152" class="fixT">высвобождение 40 ч/мес</text>
+
+  <!-- ROW 2: критическое — ожидание подписи -->
+  <rect x="60" y="180" width="280" height="80" fill="#FFD6D6" stroke="#C00000" stroke-width="2" stroke-dasharray="3,2"/>
+  <text x="200" y="200" class="strikeT" font-weight="bold" fill="#C00000">⚠⚠ Ожидание подписи</text>
+  <text x="200" y="218" class="strikeT" fill="#C00000">проректора (до 7 дней)</text>
+  <text x="200" y="234" class="strikeT" fill="#C00000">Нет уведомления</text>
+  <text x="200" y="250" class="strikeT" fill="#C00000">об отсутствии</text>
+
+  <line x1="340" y1="220" x2="430" y2="220" class="ar" marker-end="url(#arr324)"/>
+
+  <rect x="430" y="180" width="320" height="80" class="fixCrit"/>
+  <text x="590" y="202" class="fixT" font-weight="bold">Электронная подпись +</text>
+  <text x="590" y="220" class="fixT">автоуведомления о задачах</text>
+  <text x="590" y="236" class="fixT">(управление потоками</text>
+  <text x="590" y="252" class="fixT">работ в Битрикс24)</text>
+
+  <line x1="750" y1="220" x2="970" y2="220" class="ar" marker-end="url(#arr324)"/>
+
+  <rect x="970" y="180" width="340" height="80" fill="#d4edda" stroke="#0a7d2a" stroke-width="1.5"/>
+  <text x="1140" y="202" class="fixT" font-weight="bold">7 дней → 1 день</text>
+  <text x="1140" y="220" class="fixT">(−86 %)</text>
+  <text x="1140" y="240" class="fixT">проректор подписывает</text>
+  <text x="1140" y="254" class="fixT">в любом месте по уведомлению</text>
+
+  <!-- ROW 3 -->
+  <rect x="60" y="280" width="280" height="60" class="strike"/>
+  <text x="200" y="300" class="strikeT" font-weight="bold">Отсутствие уведомлений</text>
+  <text x="200" y="316" class="strikeT">о готовности; сотрудник</text>
+  <text x="200" y="332" class="strikeT">узнаёт при личном визите</text>
+
+  <line x1="340" y1="310" x2="430" y2="310" class="ar" marker-end="url(#arr324)"/>
+
+  <rect x="430" y="280" width="320" height="60" class="fix"/>
+  <text x="590" y="300" class="fixT" font-weight="bold">Автоматические уведомления</text>
+  <text x="590" y="316" class="fixT">в Битрикс24 (пуш, e-mail, мессенджер)</text>
+  <text x="590" y="332" class="fixT">по каждому событию</text>
+
+  <line x1="750" y1="310" x2="970" y2="310" class="ar" marker-end="url(#arr324)"/>
+
+  <rect x="970" y="280" width="340" height="60" fill="#fff7e6" stroke="#888"/>
+  <text x="1140" y="302" class="lbl" font-weight="bold">Мгновенное информирование</text>
+  <text x="1140" y="320" class="lbl">исключение «холостых ходок»</text>
+  <text x="1140" y="334" class="lbl">сотрудника в главное здание</text>
+
+  <!-- ROW 4 -->
+  <rect x="60" y="360" width="280" height="60" class="strike"/>
+  <text x="200" y="380" class="strikeT" font-weight="bold">Печать индивидуального</text>
+  <text x="200" y="396" class="strikeT">приказа на каждого сотрудника</text>
+  <text x="200" y="412" class="strikeT">(38 мин лишней обработки)</text>
+
+  <line x1="340" y1="390" x2="430" y2="390" class="ar" marker-end="url(#arr324)"/>
+
+  <rect x="430" y="360" width="320" height="60" class="fix"/>
+  <text x="590" y="380" class="fixT" font-weight="bold">Единый приказ на подразделение</text>
+  <text x="590" y="396" class="fixT">(консолидированный шаблон</text>
+  <text x="590" y="412" class="fixT">в системе; стандартизация)</text>
+
+  <line x1="750" y1="390" x2="970" y2="390" class="ar" marker-end="url(#arr324)"/>
+
+  <rect x="970" y="360" width="340" height="60" fill="#fff7e6" stroke="#888"/>
+  <text x="1140" y="380" class="lbl" font-weight="bold">−38 мин лишней обработки</text>
+  <text x="1140" y="398" class="lbl">из 6 615 индивидуальных</text>
+  <text x="1140" y="414" class="lbl">заявлений → 1 приказ</text>
+
+  <!-- ROW 5 -->
+  <rect x="60" y="440" width="280" height="60" class="strike"/>
+  <text x="200" y="460" class="strikeT" font-weight="bold">Бумажные заявления</text>
+  <text x="200" y="476" class="strikeT">(ошибки заполнения,</text>
+  <text x="200" y="492" class="strikeT">переделывание)</text>
+
+  <line x1="340" y1="470" x2="430" y2="470" class="ar" marker-end="url(#arr324)"/>
+
+  <rect x="430" y="440" width="320" height="60" class="fix"/>
+  <text x="590" y="460" class="fixT" font-weight="bold">Электронная форма с валидацией</text>
+  <text x="590" y="476" class="fixT">полей и автопроверкой конфликтов</text>
+  <text x="590" y="492" class="fixT">(Пока-еке — защита от ошибок)</text>
+
+  <line x1="750" y1="470" x2="970" y2="470" class="ar" marker-end="url(#arr324)"/>
+
+  <rect x="970" y="440" width="340" height="60" fill="#fff7e6" stroke="#888"/>
+  <text x="1140" y="460" class="lbl" font-weight="bold">−33 мин переделывания</text>
+  <text x="1140" y="478" class="lbl">все ошибки выявляются</text>
+  <text x="1140" y="494" class="lbl">в момент заполнения</text>
+
+  <!-- ROW 6 -->
+  <rect x="60" y="520" width="280" height="60" class="strike"/>
+  <text x="200" y="540" class="strikeT" font-weight="bold">Специалисты ППС на</text>
+  <text x="200" y="556" class="strikeT">курьерских функциях</text>
+  <text x="200" y="572" class="strikeT">(40 ч/мес)</text>
+
+  <line x1="340" y1="550" x2="430" y2="550" class="ar" marker-end="url(#arr324)"/>
+
+  <rect x="430" y="520" width="320" height="60" class="fix"/>
+  <text x="590" y="540" class="fixT" font-weight="bold">Полное исключение физической</text>
+  <text x="590" y="556" class="fixT">доставки документов;</text>
+  <text x="590" y="572" class="fixT">цифровизация согласований</text>
+
+  <line x1="750" y1="550" x2="970" y2="550" class="ar" marker-end="url(#arr324)"/>
+
+  <rect x="970" y="520" width="340" height="60" fill="#fff7e6" stroke="#888"/>
+  <text x="1140" y="540" class="lbl" font-weight="bold">Высвобождение 17 сотрудников</text>
+  <text x="1140" y="558" class="lbl">(20 → 3); экономия ФОТ</text>
+  <text x="1140" y="574" class="lbl">5,6 млн руб./год</text>
+
+  <!-- Итоговый блок -->
+  <rect x="80" y="610" width="1240" height="100" fill="#d4edda" stroke="#0a7d2a" stroke-width="2"/>
+  <text x="700" y="632" class="lblb">Совокупный эффект EPC TO BE</text>
+  <text x="100" y="654" class="lbl" text-anchor="start">• Время цикла: 135 мин → 20 мин/заявление (−85 %)   • Время с ожиданием: 7,25 дней → 1 день (−86 %)</text>
+  <text x="100" y="674" class="lbl" text-anchor="start">• Трудоёмкость: 20 чел. → 3 чел.   • ФОТ: 12,48 млн руб./год → 1,87 млн руб./год (−85 %)   • Транспортировка: 40 ч/мес → 0</text>
+  <text x="100" y="694" class="lbl" text-anchor="start">• Бумажный документооборот: 100 % → 0 %   • Высвобождение 17 сотрудников на аналитические задачи HR</text>
+
+  <text x="700" y="755" class="src">Источник: составлено автором.</text>
+</svg>
