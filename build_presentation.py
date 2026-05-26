@@ -360,8 +360,8 @@ card_h = Cm(8.0); card_y = Cm(2.7)
 
 card_data = [
     ("НОТАЦИИ", "•  IDEF0\n   FIPS PUB 183 (NIST)\n•  BPMN 2.0\n   OMG, 2011\n•  EPC\n   Business Studio", PRIMARY),
-    ("LEAN", "•  7 видов потерь\n   (Тайити Оно)\n•  ДЦ / НДБ / НДЦ\n•  Диаграмма Ишикавы\n•  5С\n•  DMAIC", ACCENT),
-    ("ЭКОНОМИКА", "•  NPV\n•  IRR\n•  DPP\n•  Анализ\n   чувствительности\n•  SMART", DANGER),
+    ("LEAN", "•  7 видов потерь\n   (Тайити Оно)\n•  5С\n•  Кайдзен\n•  SMED\n•  Стандартизация", ACCENT),
+    ("АНАЛИЗ", "•  SIPOC\n•  Хронометраж\n•  ДЦ / НДБ / НДЦ\n•  Диаграмма\n   Ишикавы\n•  DMAIC · SMART", DANGER),
 ]
 for i, (ttl, body, col) in enumerate(card_data):
     cx = right_x + i * (card_w + card_gap)
@@ -375,7 +375,7 @@ for i, (ttl, body, col) in enumerate(card_data):
              align=PP_ALIGN.LEFT, anchor=MSO_ANCHOR.TOP)
 
 bottom_band(slide,
-    "Стек: НОТАЦИИ + LEAN + ИНВЕСТИЦИОННЫЙ АНАЛИЗ — применён к 3 подразделениям КФУ")
+    "Стек: ОПИСАНИЕ (нотации) + АНАЛИЗ (узкие места) + УЛУЧШЕНИЕ (Lean) — применён к 3 подразделениям КФУ")
 
 
 # =================================================================
